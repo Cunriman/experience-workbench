@@ -1,11 +1,13 @@
 # 经历工作台 · Experience Workbench
 
+**中文** | [English](README.en.md)
+
 把你的**竞赛、项目、论文、专利、奖项、学生工作、实习、志愿服务、证书、交换经历**收进一个本地工作台：
 节点倒计时提醒、材料归档、复盘笔记、一键导出 A4 简历。
 
 > 一个零依赖的本地小服务 + 零构建前端。数据全部存在你自己的硬盘上，不联网、不上传、不需要账号。
 
-> 中英双语介绍页（一键切换）：[intro/index.html](intro/index.html)
+> 中英双语介绍页（一键切换）：[cunriman.github.io/experience-workbench/intro](https://cunriman.github.io/experience-workbench/intro/)
 
 ![概览](docs/screenshots/01-overview.png)
 
