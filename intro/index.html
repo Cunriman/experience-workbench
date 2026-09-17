@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>经历工作台 · Experience Workbench</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230969da'/%3E%3Ctext x='16' y='22' font-size='17' text-anchor='middle' fill='%23fff' font-family='sans-serif'%3E经%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --fg:#1f2328; --fg-muted:#57606a; --border:#d0d7de; --accent:#0969da;
+    --code-bg:#f6f8fa; --inline-code-bg:rgba(175,184,193,.2); --page-bg:#f6f8fa;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:auto}
+  body{margin:0;background:var(--page-bg);color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
+    font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  /* ===== 顶栏：标题 + 语言切换 ===== */
+  .topbar{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid var(--border)}
+  .topbar-inner{max-width:1012px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .brand{display:flex;align-items:center;gap:8px;font-weight:600;font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .brand svg{flex:none}
+  .toggle{display:flex;background:var(--code-bg);border:1px solid var(--border);border-radius:6px;padding:2px;flex:none}
+  .toggle button{appearance:none;border:0;background:transparent;color:var(--fg-muted);font-size:13px;font-weight:600;
+    padding:4px 12px;border-radius:4px;cursor:pointer;font-family:inherit}
+  .toggle button.active{background:#fff;color:var(--fg);box-shadow:0 0 0 1px var(--border)}
+  .toggle button:focus-visible{outline:2px solid var(--accent);outline-offset:1px}
+  /* ===== GitHub README 渲染风格 ===== */
+  .markdown-body{max-width:1012px;margin:24px auto 48px;background:#fff;border:1px solid var(--border);border-radius:8px;padding:32px 45px}
+  @media (max-width:768px){.markdown-body{padding:20px 18px;margin:12px auto 24px}}
+  .markdown-body h1,.markdown-body h2{padding-bottom:.3em;border-bottom:1px solid var(--border)}
+  .markdown-body h1{font-size:1.9em;margin:0 0 16px}
+  .markdown-body h2{font-size:1.45em;margin:28px 0 12px}
+  .markdown-body h3{font-size:1.15em;margin:20px 0 8px}
+  .markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4{font-weight:600;line-height:1.25}
+  .markdown-body p{margin:0 0 14px}
+  .markdown-body strong{font-weight:600}
+  .markdown-body a{color:var(--accent);text-decoration:none}
+  .markdown-body a:hover{text-decoration:underline}
+  .markdown-body ul,.markdown-body ol{padding-left:2em;margin:0 0 14px}
+  .markdown-body li{margin:4px 0}
+  .markdown-body blockquote{color:var(--fg-muted);border-left:.25em solid var(--border);padding:0 1em;margin:0 0 14px}
+  .markdown-body code{background:var(--inline-code-bg);border-radius:6px;padding:.2em .4em;font-size:85%;
+    font-family:"SFMono-Regular",Consolas,"Liberation Mono",Menlo,monospace}
+  .markdown-body pre{background:var(--code-bg);border-radius:6px;padding:16px;overflow:auto;margin:0 0 14px;line-height:1.45}
+  .markdown-body pre code{background:transparent;padding:0;font-size:13.5px}
+  .markdown-body hr{border:0;border-top:1px solid var(--border);margin:24px 0}
+  .markdown-body img{max-width:100%;height:auto;border-radius:6px}
+  .markdown-body figure{margin:0 0 20px}
+  .markdown-body figcaption{font-size:13px;color:var(--fg-muted);margin-top:6px}
+  .markdown-body table{border-collapse:collapse;margin:0 0 14px;width:100%;table-layout:fixed}
+  .markdown-body th,.markdown-body td{border:1px solid var(--border);padding:6px 13px}
+  .markdown-body th{font-weight:600;background:var(--code-bg)}
+  .markdown-body .tagline{font-size:1.08em}
+  .footnote{font-size:13px;color:var(--fg-muted);margin-top:16px}
+  @media (max-width:480px){.brand{font-size:13px}.topbar-inner{padding:8px 12px}}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="4" fill="#0969da"/><rect x="7.5" y="7.5" width="3.2" height="9" rx="1" fill="#fff"/><rect x="12.8" y="7.5" width="3.2" height="6.5" rx="1" fill="#fff" opacity=".75"/><rect x="18" y="7.5" width="3.2" height="9" rx="1" fill="#fff" opacity=".5"/></svg>
+      <span>经历工作台 · Experience Workbench</span>
+    </div>
+    <div class="toggle" role="group" aria-label="Language switch">
+      <button id="btn-cn" type="button" aria-pressed="true">中文</button>
+      <button id="btn-en" type="button" aria-pressed="false">English</button>
+    </div>
+  </div>
+</header>
+
+<main class="markdown-body">
+
+<!-- ===== 视图：中文 ===== -->
+<article id="view-cn" lang="zh-CN">
+
+<h1>经历工作台 · Experience Workbench</h1>
+
+<p class="tagline">把你的<strong>竞赛、项目、论文、专利、奖项、学生工作、实习、志愿服务、证书、交换经历</strong>收进一个本地工作台：
+节点倒计时提醒、材料归档、复盘笔记、一键导出 A4 简历。</p>
+
+<blockquote>一个零依赖的本地小服务 + 零构建前端。数据全部存在你自己的硬盘上，不联网、不上传、不需要账号。</blockquote>
+
+<figure><img src="assets/01-overview.png" alt="概览页"><figcaption>概览</figcaption></figure>
+
+<hr>
+
+<h2>为什么做这个</h2>
+
+<p>大学四年会攒下十几条「值得一提」的经历，但真到写简历、填保研材料、申请交换的时候，你会发现：</p>
+
+<ul>
+  <li>报名截止日期散在微信、邮件、QQ 群里，总是靠记忆；</li>
+  <li>获奖证书、作品截图、证明材料散在几个文件夹里，找一次翻半天；</li>
+  <li>每写一次简历就要重新回忆一遍「当时做了什么、拿到了什么名次」；</li>
+  <li>想复盘「这次比赛为什么没进决赛」，却没有地方记。</li>
+</ul>
+
+<p>这个工具把上面四件事收在一处：<strong>经历是唯一的主线</strong>，节点（报名/提交/结果）、材料、复盘都挂在经历下面。</p>
+
+<hr>
+
+<h2>功能</h2>
+
+<h3>经历档案</h3>
+<p>10 种内置类型，每种有自己专属的字段——竞赛记级别/赛道/名次/角色，论文记期刊/作者次序/收录情况，专利用申请号/授权公告日……切换类型时表单字段跟着变，不会问你不相关的问题。类型还能自己增删。</p>
+<figure><img src="assets/02-archive.png" alt="经历档案"><figcaption>经历档案</figcaption></figure>
+<p>三种视图：看板（按阶段分组）、表格、时间线。点开任意一条进入侧栏详情，改完即存。</p>
+<figure><img src="assets/04-detail.png" alt="经历详情"><figcaption>经历详情</figcaption></figure>
+
+<h3>赛程节点与提醒</h3>
+<p>每条经历下面可以挂若干节点：报名截止 → 作品提交 → 结果公布，各带提前量（默认 30/7/3/1 天，可调）。服务每天在你设定的时刻（默认 08:00）扫一遍，到点弹系统桌面通知；<strong>开机时会把错过的提醒补发一次</strong>，不会因为关机漏掉。同一条提醒只发一次。</p>
+<p>桌面通知走 Windows 原生 Toast（仅 Windows 生效）；macOS / Linux 上可以把提醒渠道切成邮件，或用 <code>data/outbox/</code> 里落盘的邮件内容自行处理。</p>
+
+<h3>材料库</h3>
+<p>证书照片、参赛作品、PDF 证明统一归档到 <code>data/attachments/</code>，在网页里直接预览（图片/PDF），Word 文档给下载链接。</p>
+<figure><img src="assets/07-materials.png" alt="材料库"><figcaption>材料库</figcaption></figure>
+
+<h3>复盘笔记</h3>
+<p>赛后趁热写一段：做对了什么、卡在哪、下次怎么改。概览页会把最近的复盘翻出来摆在你面前。</p>
+<figure><img src="assets/08-retro.png" alt="复盘笔记"><figcaption>复盘笔记</figcaption></figure>
+
+<h3>简历导出</h3>
+<p>选口径（保研 / 求职 / 出国）× 语言（中文 / 英文）× 版式 × 格式（PDF / Word / 网页 / Markdown），右边实时看到 A4 纸张效果，自动分页、自动加页码、跨页章节自动标「（续）」。
+单栏版式是逐条精确拆页的，屏幕所见即打印所得；<strong>双栏 / 侧栏版式整页是一个 flex 容器，拆开会破版，那两种版式不做屏幕分页</strong>，真实页数交给打印兜底。</p>
+<ul>
+  <li>9 种版式：经典单栏、极简留白、学术履历、典雅衬线、高密度、紧凑双栏、侧栏色块、清新双栏、顶部横幅。常用的三个可以收藏置顶，也可以上传自己的 HTML 模板；</li>
+  <li>内容超出一页时，屏幕上会提示「纸下面还有 N 处没填完」，只进屏幕预览、绝不印到纸上；</li>
+  <li>出国口径锁定英文稿；英文稿里没翻译的内容会在纸上标黄，并列出待翻译清单——刻意印出来，逼自己翻完；</li>
+  <li>支持证件照，位置随版式自动适配（单栏右上角、双栏侧栏顶部、色带右端）。</li>
+</ul>
+<figure><img src="assets/06-export.png" alt="简历导出"><figcaption>简历导出</figcaption></figure>
+
+<h3>竞赛库</h3>
+<p>内置 197 项赛事，覆盖大学生数学建模、蓝桥杯、互联网+、ICPC、电赛等：其中 164 项带级别认定（国家级 137 / 国际级 27），每项带主办方、届次节奏、适合的赛道；可按专业方向筛，一键「加入我的档案」自动套好赛程。剩下 33 项只收录基本信息，不猜级别。</p>
+<p>同时内置教育部 816 个本科专业目录，搜索框支持分级匹配。</p>
+<figure><img src="assets/05-library.png" alt="竞赛库"><figcaption>竞赛库</figcaption></figure>
+
+<h3>概览</h3>
+<p>在研竞赛数、7 天内到期的节点、待补材料、已获奖项，以及最近复盘和成果成就度。</p>
+<figure><img src="assets/03-schedule.png" alt="日程节点"><figcaption>日程节点</figcaption></figure>
+
+<h3>设置</h3>
+<p>提醒时刻与提前量、提醒渠道（桌面 / 邮件）、经历类型的增删，都在这里；改完即存。</p>
+<figure><img src="assets/09-settings.png" alt="设置"><figcaption>设置</figcaption></figure>
+
+<hr>
+
+<h2>快速开始</h2>
+
+<p><strong>要求：Node.js ≥ 18</strong>（不需要 <code>npm install</code>，核心功能零第三方依赖）</p>
+
+<p>Windows：双击 <code>start.bat</code></p>
+
+<p>macOS / Linux：</p>
+
+<pre><code>node server.js</code></pre>
+
+<p>然后浏览器打开 <a href="http://127.0.0.1:8777">http://127.0.0.1:8777</a>。端口被占用会自动往后找一个（8778、8779…），启动时控制台会打印实际地址。</p>
+
+<p>首次启动会在项目下自动创建 <code>data/</code> 目录并写入空数据，直接开箱可用。</p>
+
+<hr>
+
+<h2>目录结构</h2>
+
+<pre><code>server.js              本地 HTTP 服务（路由 / 静态资源 / 写接口）
+public/
+  index.html           单页外壳
+  app.js               全部前端逻辑（视图、表单、导出排版）
+  styles.css           CSS 变量 token + Bento 网格
+src/
+  store.js             JSON 读写 + 滚动备份
+  taxonomy.js          10 类经历的真源（含每类专属字段定义）
+  export.js            简历排版引擎（3 口径 × 9 版式 × 4 格式）
+  docx.js              零依赖 .docx 生成
+  library.js           竞赛库检索与专业匹配
+  reminder.js          每日提醒 + 开机补发 + 桌面通知
+  demo.js              示例经历
+  seed/
+    competitions.json  竞赛库数据
+    majors.json        教育部专业目录
+qa/                    自检：CDP 驱动真实浏览器的功能与响应式断言
+tools/                 一次性数据构建脚本（幂等，可复跑）
+docs/screenshots/      README 用的界面截图</code></pre>
+
+<hr>
+
+<h2>数据与隐私</h2>
+
+<ul>
+  <li><strong>全部数据都在本机</strong>：<code>data/*.json</code> + <code>data/attachments/</code>。没有账号系统、没有埋点、不做任何统计上报。</li>
+  <li><strong>默认不联网</strong>：唯一的对外通道是「邮件提醒」，而且是<strong>你自己可选开启</strong>的——不填 SMTP 就完全不发，填了也只连你指定的那台邮件服务器。桌面通知走本机系统通道。邮件发送依赖可选的 <code>nodemailer</code>（装了才发；没装时提醒内容落盘到 <code>data/outbox/</code>，照样不丢）。</li>
+  <li><strong>仓库里不含任何个人数据</strong>：<code>data/</code>、<code>data/attachments/</code>、<code>qa/out/</code>、<code>*.log</code> 已全部写进 <code>.gitignore</code>。</li>
+  <li>写入即落盘，并在 <code>data/backups/</code> 保留一份滚动备份（只留最新一版），误删可回滚。</li>
+  <li>README 里的截图使用<strong>虚构人物数据</strong>（林一鸣 / 云澜大学），与任何真实个人无关。</li>
+</ul>
+
+<hr>
+
+<h2>竞赛库数据来源</h2>
+
+<p>竞赛条目整理自公开渠道：中国高等教育学会《全国普通高校大学生竞赛分析报告》榜单，以及一份高校内部的竞赛认定名单。条目里的主办方、届次节奏为公开信息整理；<strong>未认定/信息不足的条目刻意留空简介，不做猜测</strong>。</p>
+
+<p>教育部专业目录（<code>src/seed/majors.json</code>）来自教育部公开文件。</p>
+
+<p>竞赛库仅作为备赛参考，赛事的具体报名时间、赛制、奖项认定请<strong>以主办方官方通知和你所在学校的认定文件为准</strong>。</p>
+
+<hr>
+
+<h2>自检</h2>
+
+<p><code>qa/</code> 下是两套端到端自检，用 CDP 驱动真实的 Edge，零第三方依赖：</p>
+
+<pre><code>node qa/check-func.js    # 155 项：增删改查、导出排版、提醒、材料、照片落位
+node qa/check-resp.js    # 121 项：6 个宽度 × 8 个视图的响应式布局</code></pre>
+
+<p>在当前代码上，<strong>刚 clone 下来、库还是空的时候</strong>跑，结果是 <strong>155 / 155、121 / 121，0 条控制台报错</strong>。</p>
+
+<p>脚本会自己备齐数据夹具（载入示例经历、补一份虚构个人资料、现场生成一张 1×1 的证件照、挂上三种格式的材料），且<strong>只填空缺、不覆盖已有数据</strong>；前置条件在当前数据集里不成立时记 <code>SKIP</code> 并说明原因，不算失败。</p>
+
+<p>断言涵盖几何尺寸（不写死像素，量相对关系）、真实点击、导出纸张像素等。跑之前建议先把项目复制一份沙箱目录再启动，避免污染真实数据——具体做法和已知问题见 <code>qa/README.md</code>。</p>
+
+<hr>
+
+<h2>开发约定</h2>
+
+<ul>
+  <li><strong>零依赖、零构建</strong>：没有 <code>node_modules</code>，没有打包步骤，改完刷新页面就生效。前端不引入框架，状态放一个 <code>S</code> 对象。</li>
+  <li><strong>单一真源</strong>：经历类型与专属字段只定义在 <code>src/taxonomy.js</code>，前端通过 <code>/api/state</code> 读取，服务端与前端不会各自维护一份。</li>
+  <li>README 截图由 CDP 驱动真实浏览器从<strong>虚构数据集</strong>上实拍，不是手绘稿。</li>
+</ul>
+
+<hr>
+
+<h2>License</h2>
+
+<p><a href="https://github.com/Cunriman/experience-workbench/blob/main/LICENSE">MIT</a></p>
+
+<p class="footnote">内置竞赛库的数据来源（中国高等教育学会竞赛分析报告榜单、某高校学业竞赛项目库、教育部本科专业目录）版权归各自发布方所有，本项目仅作结构化整理，用于学习与研究。</p>
+
+</article>
+
+<!-- ===== 视图：英文 ===== -->
+<article id="view-en" lang="en" hidden>
+
+<h1>经历工作台 · Experience Workbench</h1>
+
+<p class="tagline">Collect your <strong>competitions, projects, papers, patents, awards, student work, internships, volunteer service, certificates, and exchange experiences</strong> into one local workbench:
+countdown reminders for deadlines, material archiving, retrospective notes, and one-click A4 resume export.</p>
+
+<blockquote>A zero-dependency local service + zero-build frontend. All data lives on your own disk — no network, no uploads, no account required.</blockquote>
+
+<figure><img src="assets/01-overview.png" alt="Overview"><figcaption>Overview</figcaption></figure>
+
+<hr>
+
+<h2>Why this exists</h2>
+
+<p>Over four years of university you accumulate a dozen or so "notable" experiences — but when it comes time to write a resume, fill out postgraduate recommendation materials, or apply for an exchange program, you'll find that:</p>
+
+<ul>
+  <li>Registration deadlines are scattered across WeChat, email, and QQ group messages — you're always relying on memory;</li>
+  <li>Award certificates, work screenshots, and proof materials sit in several folders — every search costs half an hour;</li>
+  <li>Each time you write a resume, you have to re-remember "what did I do, what place did I get";</li>
+  <li>You want to reflect on "why didn't this competition make the finals" — but there's nowhere to record it.</li>
+</ul>
+
+<p>This tool brings those four problems together in one place: <strong>experience is the single thread</strong>, and nodes (registration / submission / results), materials, and retrospectives all hang under each experience.</p>
+
+<hr>
+
+<h2>Features</h2>
+
+<h3>Experience Archive</h3>
+<p>10 built-in types, each with its own dedicated fields — competitions record level / track / rank / role, papers record journal / author order / indexing status, patents record application number / grant date… The form fields change when you switch types, so you're never asked irrelevant questions. Types can be added or removed.</p>
+<figure><img src="assets/02-archive.png" alt="Experience archive"><figcaption>Experience archive</figcaption></figure>
+<p>Three views: kanban (grouped by stage), table, and timeline. Click any entry to open a side-panel detail; edits save immediately.</p>
+<figure><img src="assets/04-detail.png" alt="Experience detail"><figcaption>Experience detail</figcaption></figure>
+
+<h3>Schedule Nodes &amp; Reminders</h3>
+<p>Each experience can hold several nodes: registration deadline → submission → results announcement, each with a configurable lead time (default 30/7/3/1 days). The service scans once a day at the time you set (default 08:00) and fires a native desktop notification; <strong>on startup, missed reminders are re-sent once</strong>, so you never lose one because the machine was off. Each reminder fires only once.</p>
+<p>Desktop notifications use the native Windows Toast (Windows only); on macOS / Linux you can switch the channel to email, or handle the email content written to <code>data/outbox/</code> yourself.</p>
+
+<h3>Material Library</h3>
+<p>Certificate photos, competition works, and PDF proofs are archived together in <code>data/attachments/</code>, previewable right in the page (images / PDF); Word documents get download links.</p>
+<figure><img src="assets/07-materials.png" alt="Material library"><figcaption>Material library</figcaption></figure>
+
+<h3>Retrospective Notes</h3>
+<p>Write a note while it's fresh: what went right, where you got stuck, what to change next time. The overview page surfaces your recent retrospectives.</p>
+<figure><img src="assets/08-retro.png" alt="Retrospective notes"><figcaption>Retrospective notes</figcaption></figure>
+
+<h3>Resume Export</h3>
+<p>Pick a track (grad school / job / study abroad) × language (Chinese / English) × layout × format (PDF / Word / Web / Markdown); see the live A4 paper preview on the right, with automatic pagination, page numbers, and "（续）/ (cont.)" markers across pages.
+Single-column layouts paginate item by item — what you see is exactly what prints; <strong>two-column / sidebar layouts are a whole-page flex container and break when split, so they skip on-screen pagination</strong> and leave the real page count to the printer.</p>
+<ul>
+  <li>9 layouts: classic single column, minimal whitespace, academic CV, elegant serif, high density, compact two-column, sidebar color block, fresh two-column, top banner. Your three most-used can be pinned to the top; you can also upload your own HTML template;</li>
+  <li>When content exceeds one page, the screen shows "N more items below the fold" — it only appears in the preview and is never printed;</li>
+  <li>The study-abroad track locks to English; untranslated content is highlighted in yellow on the paper with a translation to-do list — deliberately printed, to force you to finish translating;</li>
+  <li>ID photo supported, auto-placed per layout (single-column top-right, two-column sidebar top, banner right end).</li>
+</ul>
+<figure><img src="assets/06-export.png" alt="Resume export"><figcaption>Resume export</figcaption></figure>
+
+<h3>Competition Library</h3>
+<p>197 built-in competitions, covering mathematical modeling, Blue Bridge Cup, Internet+, ICPC, electronic design, and more: 164 with level ratings (137 national / 27 international), each with organizer, cadence, and suitable tracks; filterable by major, with one-click "add to my archive" that auto-fills the schedule. The remaining 33 carry basic info only — no guessed levels.</p>
+<p>It also ships the MOE's 816-entry undergraduate majors catalog, with hierarchical matching in the search box.</p>
+<figure><img src="assets/05-library.png" alt="Competition library"><figcaption>Competition library</figcaption></figure>
+
+<h3>Overview</h3>
+<p>Active competitions, nodes due within 7 days, missing materials, awards won, plus recent retrospectives and achievement level.</p>
+<figure><img src="assets/03-schedule.png" alt="Schedule nodes"><figcaption>Schedule nodes</figcaption></figure>
+
+<h3>Settings</h3>
+<p>Reminder time and lead times, reminder channels (desktop / email), and adding or removing experience types — all here; saved on change.</p>
+<figure><img src="assets/09-settings.png" alt="Settings"><figcaption>Settings</figcaption></figure>
+
+<hr>
+
+<h2>Quick Start</h2>
+
+<p><strong>Requirements: Node.js ≥ 18</strong> (no <code>npm install</code> needed — the core is zero third-party dependencies)</p>
+
+<p>Windows: double-click <code>start.bat</code></p>
+
+<p>macOS / Linux:</p>
+
+<pre><code>node server.js</code></pre>
+
+<p>Then open <a href="http://127.0.0.1:8777">http://127.0.0.1:8777</a> in your browser. If the port is taken it auto-increments (8778, 8779…); the console prints the actual address on startup.</p>
+
+<p>On first launch, a <code>data/</code> directory with empty data is created automatically — ready to use out of the box.</p>
+
+<hr>
+
+<h2>Directory Structure</h2>
+
+<pre><code>server.js              local HTTP server (routes / static assets / write API)
+public/
+  index.html           single-page shell
+  app.js               all frontend logic (views, forms, export layout)
+  styles.css           CSS variable tokens + Bento grid
+src/
+  store.js             JSON read/write + rolling backup
+  taxonomy.js          single source of truth for the 10 types (per-type fields)
+  export.js            resume layout engine (3 tracks × 9 layouts × 4 formats)
+  docx.js              zero-dependency .docx generation
+  library.js           competition search &amp; major matching
+  reminder.js          daily reminders + catch-up on startup + desktop notifications
+  demo.js              sample experiences
+  seed/
+    competitions.json  competition library data
+    majors.json        MOE majors catalog
+qa/                    self-check: CDP-driven real-browser functional &amp; responsive assertions
+tools/                 one-off data build scripts (idempotent, re-runnable)
+docs/screenshots/      interface screenshots for the README</code></pre>
+
+<hr>
+
+<h2>Data &amp; Privacy</h2>
+
+<ul>
+  <li><strong>Everything stays on this machine</strong>: <code>data/*.json</code> + <code>data/attachments/</code>. No account system, no analytics, no telemetry of any kind.</li>
+  <li><strong>Offline by default</strong>: the only outbound channel is "email reminders", and it's <strong>opt-in</strong> — without SMTP nothing is ever sent; with it, it only connects to the mail server you specify. Desktop notifications use the OS channel. Email delivery depends on the optional <code>nodemailer</code> (only sends if installed; otherwise reminders are written to <code>data/outbox/</code>, so nothing is lost).</li>
+  <li><strong>The repo contains no personal data</strong>: <code>data/</code>, <code>data/attachments/</code>, <code>qa/out/</code>, and <code>*.log</code> are all in <code>.gitignore</code>.</li>
+  <li>Every write lands on disk immediately, plus a rolling backup in <code>data/backups/</code> (latest version only) so accidental deletions can be rolled back.</li>
+  <li>README screenshots use <strong>fictional data</strong> (Lin Yiming / Yunlan University), unrelated to any real person.</li>
+</ul>
+
+<hr>
+
+<h2>Competition Data Sources</h2>
+
+<p>Competition entries are compiled from public channels: the China Association of Higher Education's "Analysis Report on National College Student Competitions", plus a university-internal competition recognition list. Organizers and cadence are organized from public information; <strong>entries without recognition or with insufficient information intentionally leave descriptions blank — no guessing</strong>.</p>
+
+<p>The MOE majors catalog (<code>src/seed/majors.json</code>) comes from public MOE documents.</p>
+
+<p>The library is a preparation reference only — for specific registration dates, formats, and award recognition, always defer to <strong>the organizers' official notices and your school's recognition documents</strong>.</p>
+
+<hr>
+
+<h2>Self-Check</h2>
+
+<p><code>qa/</code> holds two end-to-end suites driven by CDP against real Edge, with zero third-party dependencies:</p>
+
+<pre><code>node qa/check-func.js    # 155 checks: CRUD, export layout, reminders, materials, photo placement
+node qa/check-resp.js    # 121 checks: responsive layout across 6 widths × 8 views</code></pre>
+
+<p>On the current code — <strong>right after a fresh clone, on an empty library</strong> — the results are <strong>155 / 155, 121 / 121, with 0 console errors</strong>.</p>
+
+<p>The scripts provision their own fixtures (load sample experiences, add a fictional profile, generate a 1×1 ID photo on the fly, attach materials in three formats), and <strong>only fill gaps — they never overwrite existing data</strong>; if a precondition doesn't hold in the current dataset they record <code>SKIP</code> with a reason, which is not a failure.</p>
+
+<p>Assertions cover geometric dimensions (relative relationships, not hardcoded pixels), real clicks, and exported paper pixels. Before running, it's recommended to copy the project into a sandbox directory first to avoid polluting real data — see <code>qa/README.md</code> for details and known issues.</p>
+
+<hr>
+
+<h2>Development Conventions</h2>
+
+<ul>
+  <li><strong>Zero dependency, zero build</strong>: no <code>node_modules</code>, no bundling step — refresh the page to apply changes. No frontend framework; state lives in a single <code>S</code> object.</li>
+  <li><strong>Single source of truth</strong>: experience types and their fields are defined only in <code>src/taxonomy.js</code>; the frontend reads them via <code>/api/state</code>, so server and client never maintain separate copies.</li>
+  <li>README screenshots are captured by CDP driving a real browser against a <strong>fictional dataset</strong> — not hand-drawn mockups.</li>
+</ul>
+
+<hr>
+
+<h2>License</h2>
+
+<p><a href="https://github.com/Cunriman/experience-workbench/blob/main/LICENSE">MIT</a></p>
+
+<p class="footnote">The data sources of the built-in competition library (the CAHE competition analysis report list, a university academic competition project library, and the MOE undergraduate majors catalog) are copyrighted by their respective publishers; this project merely structures them for learning and research.</p>
+
+</article>
+
+</main>
+
+<script>
+  (function(){
+    var btnCn = document.getElementById('btn-cn');
+    var btnEn = document.getElementById('btn-en');
+    var viewCn = document.getElementById('view-cn');
+    var viewEn = document.getElementById('view-en');
+    function setLang(l){
+      var isEn = l === 'en';
+      viewCn.hidden = isEn;
+      viewEn.hidden = !isEn;
+      document.documentElement.lang = isEn ? 'en' : 'zh-CN';
+      btnCn.classList.toggle('active', !isEn);
+      btnEn.classList.toggle('active', isEn);
+      btnCn.setAttribute('aria-pressed', String(!isEn));
+      btnEn.setAttribute('aria-pressed', String(isEn));
+    }
+    btnCn.addEventListener('click', function(){ setLang('cn'); if(location.hash !== '#cn'){ history.replaceState(null,'','#cn'); } });
+    btnEn.addEventListener('click', function(){ setLang('en'); if(location.hash !== '#en'){ history.replaceState(null,'','#en'); } });
+    window.addEventListener('hashchange', function(){ setLang(location.hash === '#en' ? 'en' : 'cn'); });
+    setLang(location.hash === '#en' ? 'en' : 'cn');
+  })();
+</script>
+
+</body>
+</html>
