@@ -1,0 +1,3142 @@
+{
+  "libVersion": "2026.09.1",
+  "dataAsOf": "2026-09-16",
+  "source": "中国高等教育学会《全国普通高校大学生竞赛分析报告》榜单（84 项）；某高校《本科生学业竞赛项目库（2024 年修订）》",
+  "caution": "本库只收录「稳定信息」：名称、校内认定档次、类别、专业方向、常见赛程。当届精确报名与截止日期每年变化，一律不预置——请以赛事官网公告为准。",
+  "tierNote": {
+    "榜单": "收录于《全国普通高校大学生竞赛分析报告》榜单（84 项）",
+    "观察": "收录于榜单观察目录",
+    "关联": "同类赛事但不在榜单内，按需保留"
+  },
+  "majorTags": [
+    "综合",
+    "计算机",
+    "电子通信",
+    "机械制造",
+    "土木建筑",
+    "数理化生",
+    "经管金融",
+    "文法外语",
+    "艺术设计",
+    "医学",
+    "体育健康",
+    "农林食品",
+    "教育心理",
+    "传媒传播"
+  ],
+  "stageTemplates": {
+    "校赛省赛国赛": [
+      "校赛",
+      "省赛",
+      "国赛"
+    ],
+    "省赛国赛": [
+      "省赛",
+      "国赛"
+    ],
+    "报名提交答辩": [
+      "报名",
+      "作品提交",
+      "答辩",
+      "结果公布"
+    ],
+    "报名比赛评奖": [
+      "报名",
+      "初赛",
+      "决赛",
+      "结果公布"
+    ],
+    "单轮": [
+      "报名",
+      "参赛",
+      "结果公布"
+    ]
+  },
+  "items": [
+    {
+      "id": "cn-innovation",
+      "name": "中国国际大学生创新大赛",
+      "short": "创新大赛（原互联网+）",
+      "category": "综合创新",
+      "tier": "榜单",
+      "organizer": "教育部等",
+      "site": "https://cy.ncss.cn/",
+      "window": "4-6 月报名",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "综合",
+        "经管金融",
+        "计算机"
+      ],
+      "note": "原「互联网+」大学生创新创业大赛，改动最大、覆盖面最广",
+      "recognition": "国际级顶级赛事",
+      "intro": "教育部等主办，从校赛一路打到世界总决赛的大学生创新创业最高舞台。"
+    },
+    {
+      "id": "cn-tzb-datiao",
+      "name": "“挑战杯”全国大学生课外学术科技作品竞赛",
+      "short": "挑战杯·大挑",
+      "category": "综合创新",
+      "tier": "榜单",
+      "organizer": "共青团中央等",
+      "site": "http://www.tiaozhanbei.net/",
+      "window": "1-6 月（奇数年）",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "综合",
+        "数理化生",
+        "机械制造",
+        "农林食品"
+      ],
+      "note": "奇数年举办",
+      "recognition": "国际级顶级赛事",
+      "intro": "共青团中央等主办，比课外学术科技作品——论文、发明、调查报告都算，奇数年办。"
+    },
+    {
+      "id": "cn-tzb-xiaotiao",
+      "name": "“挑战杯”中国大学生创业计划竞赛",
+      "short": "挑战杯·小挑",
+      "category": "综合创新",
+      "tier": "榜单",
+      "organizer": "共青团中央等",
+      "site": "http://www.tiaozhanbei.net/",
+      "window": "2-12 月（偶数年）",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "综合",
+        "经管金融"
+      ],
+      "note": "偶数年举办",
+      "recognition": "国际级顶级赛事",
+      "intro": "共青团中央等主办，比创业计划与商业落地能力，偶数年办，与大挑隔年互补。"
+    },
+    {
+      "id": "cn-srtp",
+      "name": "全国大学生创新创业训练计划年会展示",
+      "short": "大创年会",
+      "category": "综合创新",
+      "tier": "榜单",
+      "organizer": "教育部高教司",
+      "site": "http://gjcxcy.bjtu.edu.cn/Index.aspx",
+      "window": "10 月",
+      "stages": "单轮",
+      "majorTags": [
+        "综合",
+        "教育心理"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "国家级大创项目的成果秀场，入选年会展示本身就是对项目的认可。"
+    },
+    {
+      "id": "cn-jnjp",
+      "name": "全国大学生节能减排社会实践与科技竞赛",
+      "short": "节能减排竞赛",
+      "category": "能源环境",
+      "tier": "榜单",
+      "organizer": "教育部高教司",
+      "site": "http://www.jienengjianpai.org/",
+      "window": "4-5 月",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "机械制造",
+        "数理化生"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "围绕节能、减排、环保做科技作品与社会实践，能源动力类的头号赛事。"
+    },
+    {
+      "id": "cn-gcxl",
+      "name": "中国大学生工程实践与创新能力大赛",
+      "short": "工创大赛",
+      "category": "工程机械",
+      "tier": "榜单",
+      "organizer": "教育部高教司",
+      "site": "http://www.gcxl.edu.cn/new/index.html",
+      "window": "3-4 月",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "机械制造",
+        "电子通信"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "智能制造、新能源车等真实工程场景的综合比拼，从\"能造\"考到\"会创\"。"
+    },
+    {
+      "id": "cn-maker",
+      "name": "中美青年创客大赛",
+      "short": "中美创客",
+      "category": "综合创新",
+      "tier": "榜单",
+      "organizer": "教育部留学服务中心",
+      "site": "https://chinaus-maker.cscse.edu.cn/",
+      "window": "4-6 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合",
+        "机械制造",
+        "计算机"
+      ],
+      "recognition": "国际级赛事",
+      "intro": "中美两国青年围绕年度主题做创客作品，马拉松式开发加后续孵化对接。"
+    },
+    {
+      "id": "cn-ican",
+      "name": "iCAN 大学生创新创业大赛",
+      "short": "iCAN",
+      "category": "综合创新",
+      "tier": "榜单",
+      "organizer": "iCAN 联盟",
+      "site": "http://www.g-ican.com/home/index",
+      "window": "4-5 月",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "电子通信",
+        "综合"
+      ],
+      "recognition": "国家级赛事",
+      "intro": "从传感器到智能硬件的创新作品赛，把 idea 做成原型再上台讲。"
+    },
+    {
+      "id": "cn-xuechuang",
+      "name": "“学创杯”全国大学生创业综合模拟大赛",
+      "short": "学创杯",
+      "category": "经管金融",
+      "tier": "榜单",
+      "organizer": "中国商业会计学会",
+      "site": "http://www.bster.cn/cyds/index",
+      "window": "1-3 月",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "经管金融"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "软件模拟企业经营决策的商战沙盘，管理类学生的经典赛场。"
+    },
+    {
+      "id": "cn-fwwb",
+      "name": "中国大学生服务外包创新创业大赛",
+      "short": "服务外包大赛",
+      "category": "综合创新",
+      "tier": "榜单",
+      "organizer": "教育部等",
+      "site": "http://www.fwwb.org.cn/",
+      "window": "2 月中-3 月 20 日",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机",
+        "经管金融"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "企业出题、学生解题，围绕软件与信息服务外包做创新方案。"
+    },
+    {
+      "id": "cn-3chuang",
+      "name": "全国大学生电子商务“创新、创意及创业”挑战赛",
+      "short": "三创赛",
+      "category": "经管金融",
+      "tier": "榜单",
+      "organizer": "教育部高等学校电子商务类专业教指委",
+      "site": "http://www.3chuang.net/",
+      "window": "9-12 月报名，次年校赛/省赛/国赛",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "经管金融",
+        "计算机"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "电子商务领域的\"创新、创意、创业\"三线并进，从网店运营到供应链方案都能比。"
+    },
+    {
+      "id": "cn-mcm",
+      "name": "全国大学生数学建模竞赛",
+      "short": "国赛数模",
+      "category": "数理化生",
+      "tier": "榜单",
+      "organizer": "中国工业与应用数学学会",
+      "site": "http://www.mcm.edu.cn/",
+      "window": "5-9 月报名，9 月比赛",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生",
+        "计算机",
+        "经管金融"
+      ],
+      "note": "含金量极高的通用型赛事",
+      "recognition": "国家级顶级赛事",
+      "intro": "三天三夜三人一队解一道现实建模题，国内普及度与认可度最高的学科竞赛之一。"
+    },
+    {
+      "id": "cn-tjjm",
+      "name": "全国大学生统计建模大赛",
+      "short": "统计建模",
+      "category": "数理化生",
+      "tier": "榜单",
+      "organizer": "中国统计教育学会",
+      "site": "http://tjjmds.ai-learning.net",
+      "window": "2-3 月",
+      "stages": "报名提交答辩",
+      "majorTags": [
+        "数理化生",
+        "经管金融"
+      ],
+      "recognition": "国家级赛事",
+      "intro": "用统计模型分析现实问题写成论文，统计类论文赛的代表。"
+    },
+    {
+      "id": "cn-zpy",
+      "name": "全国周培源大学生力学竞赛",
+      "short": "周培源力学",
+      "category": "数理化生",
+      "tier": "榜单",
+      "organizer": "中国力学学会",
+      "site": "http://zpy.cstam.org.cn/index.aspx",
+      "window": "2-3 月",
+      "stages": "单轮",
+      "majorTags": [
+        "机械制造",
+        "土木建筑"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "理论加实验的力学综合赛，土木机械类学生检验力学功底的首选。"
+    },
+    {
+      "id": "cn-ncmac",
+      "name": "全国高等院校数学能力挑战赛",
+      "short": "数学能力挑战赛",
+      "category": "数理化生",
+      "tier": "关联",
+      "organizer": "",
+      "site": "http://www.ncmac.cn/",
+      "window": "1-6 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生"
+      ]
+    },
+    {
+      "id": "cn-jsjds",
+      "name": "中国大学生计算机设计大赛",
+      "short": "计设赛",
+      "category": "计算机",
+      "tier": "榜单",
+      "organizer": "教育部高校计算机类专业教指委",
+      "site": "http://jsjds.blcu.edu.cn/",
+      "window": "1-4 月",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "计算机",
+        "传媒传播"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "软件应用、数媒设计、微课等大类比作品，覆盖面广、门类多。"
+    },
+    {
+      "id": "cn-icpc",
+      "name": "ACM-ICPC 国际大学生程序设计竞赛",
+      "short": "ICPC",
+      "category": "计算机",
+      "tier": "榜单",
+      "organizer": "ICPC Foundation",
+      "site": "https://icpc.global/",
+      "window": "2-9 月（区域赛/网络赛）",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机"
+      ],
+      "note": "算法类硬通货",
+      "recognition": "国际级顶级赛事",
+      "intro": "三人一队限时解题，全球公认的算法编程最高水平对决，区域赛晋级世界总决赛。"
+    },
+    {
+      "id": "cn-c4",
+      "name": "中国高校计算机大赛（C4）",
+      "short": "C4 大赛",
+      "category": "计算机",
+      "tier": "榜单",
+      "organizer": "全国高等学校计算机教育研究会",
+      "site": "http://www.c4best.cn/",
+      "window": "3-6 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机"
+      ],
+      "note": "含大数据挑战赛、团体程序设计天梯赛、移动应用创新赛、网络技术挑战赛、人工智能创意赛 5 个子赛",
+      "recognition": "国家级顶级赛事",
+      "intro": "天梯赛排位、大数据挑战、AI 创意等五个子赛，计算机系列的团体擂台。"
+    },
+    {
+      "id": "cn-lanqiao",
+      "name": "蓝桥杯全国软件和信息技术专业人才大赛",
+      "short": "蓝桥杯",
+      "category": "计算机",
+      "tier": "榜单",
+      "organizer": "工业和信息化部人才交流中心",
+      "site": "http://dasai.lanqiao.cn/",
+      "window": "1-3 月",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "计算机"
+      ],
+      "note": "入门友好，题型标准化",
+      "recognition": "国家级顶级赛事",
+      "intro": "程序设计与电子类标准化命题，省赛国赛节奏快，适合当第一张竞赛门票。"
+    },
+    {
+      "id": "cn-softbei",
+      "name": "“中国软件杯”大学生软件设计大赛",
+      "short": "中国软件杯",
+      "category": "计算机",
+      "tier": "榜单",
+      "organizer": "工业和信息化部等",
+      "site": "http://www.cnsoftbei.com/",
+      "window": "3-5 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "工信部组织、企业出题，做一个真实可用的软件系统，赛题就是招聘题。"
+    },
+    {
+      "id": "cn-oscomp",
+      "name": "全国大学生计算机系统能力大赛",
+      "short": "系统能力大赛",
+      "category": "计算机",
+      "tier": "榜单",
+      "organizer": "教育部高校计算机类专业教指委",
+      "site": "https://compiler.educg.net/#/",
+      "window": "2-12 月（分赛项）",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机"
+      ],
+      "note": "含编译系统、操作系统、数据库、智能系统等赛项"
+    },
+    {
+      "id": "cn-baidu-star",
+      "name": "百度之星程序设计大赛",
+      "short": "百度之星",
+      "category": "计算机",
+      "tier": "关联",
+      "organizer": "百度",
+      "site": "https://star.baidu.com/#/",
+      "window": "以官网为准",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机"
+      ]
+    },
+    {
+      "id": "cn-matibei",
+      "name": "码蹄杯全国职业院校程序设计大赛",
+      "short": "码蹄杯",
+      "category": "计算机",
+      "tier": "关联",
+      "organizer": "",
+      "site": "https://matiji.net/matibei",
+      "window": "以官网为准",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机"
+      ]
+    },
+    {
+      "id": "cn-ncccu",
+      "name": "全国高校计算机能力挑战赛",
+      "short": "计挑赛",
+      "category": "计算机",
+      "tier": "关联",
+      "organizer": "全国高等学校计算机教育研究会",
+      "site": "https://www.ncccu.org.cn/",
+      "window": "11 月区域赛/省赛，12 月国赛",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "计算机"
+      ],
+      "note": "入选榜单观察目录"
+    },
+    {
+      "id": "cn-nuedc",
+      "name": "全国大学生电子设计竞赛",
+      "short": "电赛",
+      "category": "电子通信",
+      "tier": "榜单",
+      "organizer": "教育部高教司",
+      "site": "http://www.nuedcchina.com/",
+      "window": "1-9 月",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "电子通信",
+        "计算机"
+      ],
+      "note": "奇数年国赛，偶数年省赛，电子类最高含金量之一",
+      "recognition": "国家级顶级赛事",
+      "intro": "四天三夜现场做出一个能跑的电子系统，电子信息类公认含金量最高的赛事。"
+    },
+    {
+      "id": "cn-datang",
+      "name": "“大唐杯”全国大学生新一代信息通信技术大赛",
+      "short": "大唐杯",
+      "category": "电子通信",
+      "tier": "榜单",
+      "organizer": "中国通信学会",
+      "site": "https://dtcup.dtxiaotangren.com",
+      "window": "3-6 月",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "电子通信"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "5G 与移动通信技术的理论与实操赛，通信类学生的对口主场。"
+    },
+    {
+      "id": "cn-huawei-ict",
+      "name": "华为 ICT 大赛",
+      "short": "华为 ICT",
+      "category": "电子通信",
+      "tier": "榜单",
+      "organizer": "华为",
+      "site": "https://e.huawei.com/cn/talent/ict-academy/#/ict-contest?compId=85131973",
+      "window": "9-11 月",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "电子通信",
+        "计算机"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "华为出题，比网络、云、AI 等 ICT 技术栈，成绩直接对接华为人才生态。"
+    },
+    {
+      "id": "cn-socchina",
+      "name": "全国大学生嵌入式芯片与系统设计竞赛",
+      "short": "嵌入式竞赛",
+      "category": "电子通信",
+      "tier": "榜单",
+      "organizer": "中国电子学会",
+      "site": "http://www.socchina.net/",
+      "window": "3-4 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "电子通信",
+        "计算机"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "围绕嵌入式芯片与系统做设计，从硬件电路到固件一条龙。"
+    },
+    {
+      "id": "cn-siemens",
+      "name": "“西门子杯”中国智能制造挑战赛",
+      "short": "西门子杯",
+      "category": "电子通信",
+      "tier": "榜单",
+      "organizer": "教育部等",
+      "site": "http://www.siemenscup-cimc.org.cn/",
+      "window": "3-6 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "电子通信",
+        "机械制造"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "智能制造全流程——从工艺设计到控制系统的仿真与实操对抗。"
+    },
+    {
+      "id": "cn-iot",
+      "name": "全国大学生物联网设计竞赛",
+      "short": "物联网竞赛",
+      "category": "电子通信",
+      "tier": "榜单",
+      "organizer": "教育部高校计算机类专业教指委",
+      "site": "https://developer.huaweicloud.com/college/wulianwang.html",
+      "window": "以官网为准",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "电子通信",
+        "计算机"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "从传感器到云平台做一个完整物联网系统，比的是系统集成度与完成度。"
+    },
+    {
+      "id": "cn-ciscn",
+      "name": "全国大学生信息安全竞赛",
+      "short": "信安竞赛",
+      "category": "电子通信",
+      "tier": "榜单",
+      "organizer": "教育部高校信息安全类专业教指委",
+      "site": "http://www.ciscn.cn/",
+      "window": "4-6 月",
+      "stages": "报名提交答辩",
+      "majorTags": [
+        "计算机"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "线上攻防加创新作品双赛道，国内大学生网络安全最高规格的官方赛事。"
+    },
+    {
+      "id": "cn-isclab",
+      "name": "全国大学生信息安全与对抗技术竞赛",
+      "short": "信安对抗赛",
+      "category": "电子通信",
+      "tier": "榜单",
+      "organizer": "",
+      "site": "http://www.isclab.org.cn",
+      "window": "以官网为准",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机"
+      ]
+    },
+    {
+      "id": "cn-3dds",
+      "name": "全国三维数字化创新设计大赛",
+      "short": "3D 大赛",
+      "category": "工程机械",
+      "tier": "榜单",
+      "organizer": "科技部等",
+      "site": "https://3dds.3ddl.net/",
+      "window": "4-7 月",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "机械制造",
+        "艺术设计"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "三维数字化设计到 3D 打印的全链条比拼，工科与艺术设计都能参加。"
+    },
+    {
+      "id": "cn-structure",
+      "name": "全国大学生结构设计竞赛",
+      "short": "结构设计竞赛",
+      "category": "土木建筑",
+      "tier": "榜单",
+      "organizer": "中国土木工程学会",
+      "site": "http://www.structurecontest.com/home",
+      "window": "1-3 月",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "土木建筑"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "用限定材料做出承重模型，加载测试见真章，土木类的标志性赛事。"
+    },
+    {
+      "id": "cn-gczbds",
+      "name": "中国大学生机械工程创新创意大赛",
+      "short": "机械工程创新创意",
+      "category": "工程机械",
+      "tier": "榜单",
+      "organizer": "中国机械工程学会",
+      "site": "http://www.gczbds.org",
+      "window": "4-7 月",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "机械制造"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "中国机械工程学会主办，围绕智能制造与机械创新做作品。"
+    },
+    {
+      "id": "cn-chengtu",
+      "name": "全国大学生先进成图技术与产品信息建模创新大赛",
+      "short": "成图大赛",
+      "category": "工程机械",
+      "tier": "榜单",
+      "organizer": "教育部高校工程图学课程教指委",
+      "site": "http://www.chengtudasai.com/",
+      "window": "1-5 月",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "机械制造",
+        "土木建筑"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "比工程图学基本功——尺规作图、三维建模与产品信息建模一条龙。"
+    },
+    {
+      "id": "cn-umic",
+      "name": "全国大学生机械创新设计大赛",
+      "short": "机械创新设计",
+      "category": "工程机械",
+      "tier": "榜单",
+      "organizer": "教育部高教司",
+      "site": "http://umic.ckcest.cn/",
+      "window": "4-5 月",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "机械制造"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "两年一届，围绕指定主题做机械装置，从机构设计到实物演示。"
+    },
+    {
+      "id": "cn-uiaec",
+      "name": "国际大学生智能农业装备创新大赛",
+      "short": "智能农业装备",
+      "category": "工程机械",
+      "tier": "榜单",
+      "organizer": "",
+      "site": "http://uiaec.ujs.edu.cn",
+      "window": "以官网为准",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "机械制造",
+        "农林食品"
+      ],
+      "recognition": "国家级赛事",
+      "intro": "农业装备智能化创新，农机与智慧农业方向的工程赛。"
+    },
+    {
+      "id": "cn-jxds",
+      "name": "全国大学生金相技能大赛",
+      "short": "金相大赛",
+      "category": "机械制造",
+      "tier": "榜单",
+      "organizer": "教育部高校材料类专业教指委",
+      "site": "http://www.jxds.tech/",
+      "window": "3-6 月",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "机械制造",
+        "数理化生"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "显微镜下比金属试样制备的手艺，材料类学生的\"绣花功夫\"大赛。"
+    },
+    {
+      "id": "cn-culsc",
+      "name": "全国大学生生命科学竞赛",
+      "short": "生命科学竞赛",
+      "category": "医学",
+      "tier": "榜单",
+      "organizer": "教育部高校生物科学类专业教指委",
+      "site": "https://www.culsc.cn/#/",
+      "window": "以官网为准",
+      "stages": "报名提交答辩",
+      "majorTags": [
+        "医学",
+        "数理化生",
+        "农林食品"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "生命科学领域的科研类竞赛，比实验设计与科研论文。"
+    },
+    {
+      "id": "cn-jcyxds",
+      "name": "全国大学生基础医学创新研究暨实验设计论坛",
+      "short": "基础医学论坛",
+      "category": "医学",
+      "tier": "榜单",
+      "organizer": "教育部高校基础医学类专业教指委",
+      "site": "http://www.jcyxds.com/",
+      "window": "1-4 月",
+      "stages": "报名提交答辩",
+      "majorTags": [
+        "医学"
+      ],
+      "recognition": "国家级赛事",
+      "intro": "基础医学科研作品与实验设计汇报，医学科研入门首选。"
+    },
+    {
+      "id": "cn-medskill",
+      "name": "中国大学生医学技术技能大赛",
+      "short": "医学技术技能",
+      "category": "医学",
+      "tier": "榜单",
+      "organizer": "教育部",
+      "site": "https://medu.bjmu.edu.cn/",
+      "window": "1 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "医学"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "临床技能大比武——问诊、查体、操作层层过关，医学生的\"技能高考\"。"
+    },
+    {
+      "id": "cn-iche",
+      "name": "全国大学生化工设计竞赛",
+      "short": "化工设计竞赛",
+      "category": "化工",
+      "tier": "榜单",
+      "organizer": "中国化工学会",
+      "site": "http://iche.zju.edu.cn/",
+      "window": "2-4 月",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "数理化生",
+        "机械制造"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "围绕指定化工产品做全流程工厂设计，从工艺到经济核算一份大方案。"
+    },
+    {
+      "id": "cn-cid",
+      "name": "全国大学生化学实验创新设计大赛",
+      "short": "化学实验创新",
+      "category": "化工",
+      "tier": "榜单",
+      "organizer": "教育部高校化学类专业教指委",
+      "site": "https://cid.nju.edu.cn/",
+      "window": "2-4 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "比化学实验的创新设计与规范操作，实验教学类作品也能参赛。"
+    },
+    {
+      "id": "cn-cteic",
+      "name": "全国大学生化工实验大赛",
+      "short": "化工实验大赛",
+      "category": "化工",
+      "tier": "关联",
+      "organizer": "中国化工教育协会",
+      "site": "http://www.cteic.com/higherEducation-199.html",
+      "window": "以官网为准",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生"
+      ],
+      "recognition": "国家级赛事",
+      "intro": "化工原理实验的操作与设计比拼。"
+    },
+    {
+      "id": "cn-milano",
+      "name": "米兰设计周——中国高校设计学科师生优秀作品展",
+      "short": "米兰设计周",
+      "category": "艺术设计",
+      "tier": "榜单",
+      "organizer": "中国高等教育学会",
+      "site": "http://www.dandad.cn/",
+      "window": "10 月-次年 3 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "优秀作品有机会登上米兰设计周展出的高校设计展赛，艺术设计的国际化通道。"
+    },
+    {
+      "id": "cn-ncda",
+      "name": "未来设计师·全国高校数字艺术设计大赛",
+      "short": "NCDA",
+      "category": "艺术设计",
+      "tier": "榜单",
+      "organizer": "工业和信息化部人才交流中心",
+      "site": "https://www.ncda.org.cn/",
+      "window": "3-6 月",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "艺术设计"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "视觉、交互、动画等数字艺术门类全覆盖，参赛体量最大的设计赛之一。"
+    },
+    {
+      "id": "cn-cdec",
+      "name": "中国好创意暨全国数字艺术设计大赛",
+      "short": "中国好创意",
+      "category": "艺术设计",
+      "tier": "榜单",
+      "organizer": "中国电子视像行业协会",
+      "site": "https://www.cdec.org.cn/",
+      "window": "3-7 月",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "艺术设计"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "数字艺术与创意设计门类齐全，中国电子视像行业协会主办。"
+    },
+    {
+      "id": "cn-ada",
+      "name": "全国大学生广告艺术大赛",
+      "short": "大广赛",
+      "category": "艺术设计",
+      "tier": "榜单",
+      "organizer": "教育部高校新闻传播学类专业教指委",
+      "site": "https://www.sun-ada.net/",
+      "window": "1 月起，3-6 月截稿",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "艺术设计",
+        "文法外语",
+        "传媒传播"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "企业真实命题做广告策划与作品，广告传播类参与人数最多的赛事。"
+    },
+    {
+      "id": "cn-huacan",
+      "name": "两岸新锐设计竞赛·华灿奖",
+      "short": "华灿奖",
+      "category": "艺术设计",
+      "tier": "榜单",
+      "organizer": "",
+      "site": "http://www.huacanjiang.com/home",
+      "window": "4-7 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "面向两岸新锐设计师的作品赛，视觉传达与产品设计皆可投稿。"
+    },
+    {
+      "id": "cn-cuidc",
+      "name": "全国大学生工业设计大赛",
+      "short": "工业设计大赛",
+      "category": "艺术设计",
+      "tier": "榜单",
+      "organizer": "教育部高校工业设计类专业教指委",
+      "site": "https://www.cuidc.net/#/",
+      "window": "以官网为准",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "艺术设计",
+        "机械制造"
+      ]
+    },
+    {
+      "id": "cn-garden",
+      "name": "全国大学生花园设计建造竞赛",
+      "short": "花园设计建造",
+      "category": "艺术设计",
+      "tier": "榜单",
+      "organizer": "",
+      "site": "http://www.lalavision.com/hysjjzjs",
+      "window": "3-7 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计",
+        "土木建筑"
+      ]
+    },
+    {
+      "id": "cn-bim",
+      "name": "国际高校 BIM 毕业设计创新大赛",
+      "short": "BIM 毕设大赛",
+      "category": "土木建筑",
+      "tier": "榜单",
+      "organizer": "中国建设教育协会",
+      "site": "http://gxbsxs.glodonedu.com/",
+      "window": "4-6 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑"
+      ]
+    },
+    {
+      "id": "cn-digital-build",
+      "name": "全国数字建筑创新应用大赛",
+      "short": "数字建筑大赛",
+      "category": "土木建筑",
+      "tier": "榜单",
+      "organizer": "",
+      "site": "http://bisai.ccen.com.cn",
+      "window": "以官网为准",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑"
+      ]
+    },
+    {
+      "id": "cn-cbda",
+      "name": "“中装杯”全国大学生环境设计大赛",
+      "short": "中装杯",
+      "category": "艺术设计",
+      "tier": "榜单",
+      "organizer": "中国建筑装饰协会",
+      "site": "http://www.cbda.cn/special/special604/",
+      "window": "1-6 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计",
+        "土木建筑"
+      ]
+    },
+    {
+      "id": "cn-oda",
+      "name": "东方设计奖全国高校创新设计大赛",
+      "short": "东方设计奖",
+      "category": "艺术设计",
+      "tier": "榜单",
+      "organizer": "",
+      "site": "https://www.oda.org.cn/",
+      "window": "2-6 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计"
+      ]
+    },
+    {
+      "id": "cn-curc",
+      "name": "全国大学生机器人大赛（CURC）",
+      "short": "机器人大赛",
+      "category": "机器人",
+      "tier": "榜单",
+      "organizer": "共青团中央等",
+      "site": "https://www.cnrobocon.net/",
+      "window": "10 月-次年 3 月",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "机械制造",
+        "电子通信",
+        "计算机"
+      ],
+      "note": "含 RoboMaster、RoboCon 两个子赛",
+      "recognition": "国家级顶级赛事",
+      "intro": "含 RoboMaster 机甲大师与 RoboCon 两个子赛，机器人对抗与任务赛的主战场。"
+    },
+    {
+      "id": "cn-robotcontest",
+      "name": "中国高校智能机器人创意大赛",
+      "short": "智能机器人创意",
+      "category": "机器人",
+      "tier": "榜单",
+      "organizer": "中国高等教育学会",
+      "site": "http://www.robotcontest.cn/",
+      "window": "3-5 月",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "机械制造",
+        "计算机"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "中国高等教育学会主办，比机器人创意设计与功能实现，报名门槛友好。"
+    },
+    {
+      "id": "cn-robocup",
+      "name": "中国机器人大赛暨 RoboCup 机器人世界杯中国赛",
+      "short": "RoboCup 中国赛",
+      "category": "机器人",
+      "tier": "榜单",
+      "organizer": "中国自动化学会",
+      "site": "https://rcccaa.drct-caa.org.cn/",
+      "window": "3-7 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机",
+        "电子通信"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "机器人世界杯的中国选拔赛，足球、救援、服务等多线同时开赛。"
+    },
+    {
+      "id": "cn-raicom",
+      "name": "睿抗机器人开发者大赛（RAICOM）",
+      "short": "RAICOM",
+      "category": "机器人",
+      "tier": "榜单",
+      "organizer": "工业和信息化部人才交流中心",
+      "site": "https://www.robocom.com.cn/",
+      "window": "2-12 月",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "计算机",
+        "机械制造"
+      ]
+    },
+    {
+      "id": "cn-robotac",
+      "name": "全国大学生机器人大赛 - RoboTac",
+      "short": "RoboTac",
+      "category": "机器人",
+      "tier": "榜单",
+      "organizer": "",
+      "site": "http://www.robotac.cn",
+      "window": "以官网为准",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "机械制造",
+        "电子通信"
+      ]
+    },
+    {
+      "id": "cn-caairobot",
+      "name": "中国机器人及人工智能大赛",
+      "short": "机器人及人工智能",
+      "category": "机器人",
+      "tier": "榜单",
+      "organizer": "中国人工智能学会",
+      "site": "http://www.caairobot.com/",
+      "window": "3-6 月",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "计算机",
+        "机械制造"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "中国人工智能学会主办，机器人与 AI 应用场景的作品赛。"
+    },
+    {
+      "id": "cn-aicomp",
+      "name": "全球校园人工智能算法精英大赛",
+      "short": "算法精英赛",
+      "category": "机器人",
+      "tier": "榜单",
+      "organizer": "中国人工智能学会",
+      "site": "https://www.aicomp.cn/about",
+      "window": "以官网为准",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机"
+      ]
+    },
+    {
+      "id": "cn-energy-econ",
+      "name": "全国大学生能源经济学术创意大赛",
+      "short": "能源经济学术创意",
+      "category": "能源环境",
+      "tier": "榜单",
+      "organizer": "",
+      "site": "http://energy.qibebt.ac.cn/eneco/contribution/index.html",
+      "window": "以官网为准",
+      "stages": "报名提交答辩",
+      "majorTags": [
+        "经管金融",
+        "数理化生"
+      ],
+      "recognition": "国家级赛事",
+      "intro": "能源与经济交叉的学术创意论文赛。"
+    },
+    {
+      "id": "cn-lowcarbon",
+      "name": "全国大学生低碳循环科技创新大赛",
+      "short": "低碳循环科技",
+      "category": "能源环境",
+      "tier": "榜单",
+      "organizer": "中国高等教育学会",
+      "site": "https://www.cnlcr.com/",
+      "window": "2-5 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生",
+        "机械制造",
+        "农林食品"
+      ]
+    },
+    {
+      "id": "cn-smartcar",
+      "name": "全国大学生智能汽车竞赛",
+      "short": "智能车竞赛",
+      "category": "电子通信",
+      "tier": "榜单",
+      "organizer": "教育部高校自动化类专业教指委",
+      "site": "http://www.smartcarrace.com/",
+      "window": "1-6 月",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "电子通信",
+        "计算机",
+        "机械制造"
+      ],
+      "note": "含华南、华东等分区赛与全国总决赛",
+      "recognition": "国家级顶级赛事",
+      "intro": "自组小车在赛道上比速度与稳定性，自动化类覆盖面最广的赛事之一。"
+    },
+    {
+      "id": "cn-survey",
+      "name": "全国大学生测绘学科创新创业智能大赛",
+      "short": "测绘创新创业",
+      "category": "测绘地理",
+      "tier": "榜单",
+      "organizer": "教育部高校测绘类专业教指委",
+      "site": "http://smt.whu.edu.cn/index.htm",
+      "window": "3-5 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑",
+        "计算机"
+      ]
+    },
+    {
+      "id": "cn-geo",
+      "name": "全国大学生地质技能竞赛",
+      "short": "地质技能竞赛",
+      "category": "测绘地理",
+      "tier": "榜单",
+      "organizer": "中国地质学会",
+      "site": "https://yuanxi.cugb.edu.cn/competition/",
+      "window": "3-5 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "岩矿鉴定、地质图件与野外基本功的比拼，地质类学子的练兵场。"
+    },
+    {
+      "id": "cn-water",
+      "name": "全国大学生水利创新设计大赛",
+      "short": "水利创新设计",
+      "category": "测绘地理",
+      "tier": "榜单",
+      "organizer": "教育部高校水利类专业教指委",
+      "site": "https://sljzw.hhu.edu.cn/",
+      "window": "以官网为准",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑",
+        "数理化生"
+      ]
+    },
+    {
+      "id": "cn-ict",
+      "name": "全国大学生集成电路创新创业大赛",
+      "short": "集创赛",
+      "category": "电子通信",
+      "tier": "榜单",
+      "organizer": "工业和信息化部人才交流中心",
+      "site": "http://univ.ciciec.com/",
+      "window": "1-3 月",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "电子通信",
+        "计算机"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "集成电路设计到封测的全链条赛题，芯片行业人才的重要入口。"
+    },
+    {
+      "id": "cn-physics-exp",
+      "name": "全国大学生物理实验竞赛",
+      "short": "物理实验竞赛",
+      "category": "数理化生",
+      "tier": "榜单",
+      "organizer": "教育部高校物理学类专业教指委",
+      "site": "https://wlsycx.moocollege.com/",
+      "window": "1-5 月",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "数理化生"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "比物理实验的设计、操作与数据分析，基础学科的实验大考。"
+    },
+    {
+      "id": "cn-opto",
+      "name": "全国大学生光电设计竞赛",
+      "short": "光电设计竞赛",
+      "category": "电子通信",
+      "tier": "榜单",
+      "organizer": "中国光学学会",
+      "site": "http://gd.p.moocollege.com/",
+      "window": "4-8 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "电子通信",
+        "数理化生"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "围绕光学与光电系统做设计竞赛，中国光学学会主办。"
+    },
+    {
+      "id": "cn-mit",
+      "name": "全国大学生数字媒体科技作品及创意竞赛",
+      "short": "数字媒体竞赛",
+      "category": "艺术设计",
+      "tier": "榜单",
+      "organizer": "中国人工智能学会",
+      "site": "http://mit.caai.cn/",
+      "window": "以官网为准",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计",
+        "计算机",
+        "传媒传播"
+      ]
+    },
+    {
+      "id": "cn-gonghangbei",
+      "name": "“工行杯”全国大学生金融科技创新大赛",
+      "short": "工行杯",
+      "category": "经管金融",
+      "tier": "榜单",
+      "organizer": "中国工商银行",
+      "site": "http://www.gonghangbei.com",
+      "window": "4-6 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "经管金融",
+        "计算机"
+      ]
+    },
+    {
+      "id": "cn-keyun",
+      "name": "“科云杯”全国大学生财会职业能力大赛",
+      "short": "科云杯",
+      "category": "经管金融",
+      "tier": "榜单",
+      "organizer": "",
+      "site": "http://match.xmkeyun.com.cn/",
+      "window": "以官网为准",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "经管金融"
+      ]
+    },
+    {
+      "id": "cn-cssc",
+      "name": "全国大学生市场调查与分析大赛",
+      "short": "市调大赛",
+      "category": "经管金融",
+      "tier": "榜单",
+      "organizer": "中国商业统计学会",
+      "site": "http://www.china-cssc.org/list-56-1.html",
+      "window": "9-10 月",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "经管金融",
+        "数理化生"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "从问卷到报告的完整市场调查，统计与商科学生的数据分析实战。"
+    },
+    {
+      "id": "cn-cubec",
+      "name": "全国高校商业精英挑战赛",
+      "short": "商业精英挑战赛",
+      "category": "经管金融",
+      "tier": "榜单",
+      "organizer": "中国国际商会",
+      "site": "http://cubec.org.cn/",
+      "window": "9 月-次年 3 月",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "经管金融"
+      ],
+      "note": "含品牌策划、会展专业创新创业实践、国际贸易、创新创业等子赛",
+      "recognition": "国家级顶级赛事",
+      "intro": "中国国际商会主办，品牌策划、国际贸易等子赛，商科综合擂台。"
+    },
+    {
+      "id": "cn-ibizsim",
+      "name": "全国企业竞争模拟大赛",
+      "short": "企业竞争模拟",
+      "category": "经管金融",
+      "tier": "榜单",
+      "organizer": "中国管理现代化研究会",
+      "site": "http://www.ibizsim.cn/",
+      "window": "3 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "经管金融"
+      ]
+    },
+    {
+      "id": "cn-tax",
+      "name": "全国本科院校税收风险管控案例大赛",
+      "short": "税收风控案例",
+      "category": "经管金融",
+      "tier": "榜单",
+      "organizer": "",
+      "site": "",
+      "window": "以官网为准",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "经管金融"
+      ],
+      "note": "官网以公众号发布为主，建议手动补链接"
+    },
+    {
+      "id": "cn-logistics",
+      "name": "全国大学生物流设计大赛",
+      "short": "物流设计大赛",
+      "category": "经管金融",
+      "tier": "榜单",
+      "organizer": "教育部高校物流类专业教指委",
+      "site": "http://www.clpp.org.cn/",
+      "window": "3-4 月",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "经管金融",
+        "机械制造"
+      ],
+      "recognition": "国家级顶级赛事",
+      "intro": "给真实企业做物流方案优化，供应链类学生的招牌赛事。"
+    },
+    {
+      "id": "cn-unipus",
+      "name": "“外研社·国才杯”“理解当代中国”全国大学生外语能力大赛",
+      "short": "外研社国才杯",
+      "category": "语言文化",
+      "tier": "榜单",
+      "organizer": "外语教学与研究出版社",
+      "site": "http://uchallenge.unipus.cn/",
+      "window": "4-10 月",
+      "stages": "校赛省赛国赛",
+      "majorTags": [
+        "文法外语"
+      ],
+      "note": "含英语演讲、辩论、写作、阅读等子赛",
+      "recognition": "国家级顶级赛事",
+      "intro": "演讲、写作、阅读、辩论多赛道的外语能力大赛，外语类最权威的全国赛。"
+    },
+    {
+      "id": "cn-21st",
+      "name": "“21 世纪杯”全国英语演讲比赛",
+      "short": "21 世纪杯",
+      "category": "语言文化",
+      "tier": "榜单",
+      "organizer": "中国日报社",
+      "site": "https://contest.i21st.cn/college/",
+      "window": "1-4 月",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "文法外语"
+      ]
+    },
+    {
+      "id": "cn-sflep",
+      "name": "“外教社杯”全国高校学生跨文化能力大赛",
+      "short": "跨文化能力大赛",
+      "category": "语言文化",
+      "tier": "榜单",
+      "organizer": "上海外语教育出版社",
+      "site": "https://ict.sflep.com/",
+      "window": "4-7 月",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "文法外语"
+      ],
+      "recognition": "国家级赛事",
+      "intro": "情景演绎加案例分析的跨文化交际比拼，外语类新贵赛事。"
+    },
+    {
+      "id": "cn-jdsxj",
+      "name": "中华经典诵写讲大赛",
+      "short": "诵写讲大赛",
+      "category": "语言文化",
+      "tier": "榜单",
+      "organizer": "教育部",
+      "site": "https://jdsxj.eduyun.cn/",
+      "window": "3-6 月",
+      "stages": "省赛国赛",
+      "majorTags": [
+        "文法外语",
+        "教育心理"
+      ],
+      "note": "含讲解、书写、诵读、篆刻 4 个子赛"
+    },
+    {
+      "id": "cn-yywz",
+      "name": "全国大学生语言文字能力大赛",
+      "short": "语言文字能力",
+      "category": "语言文化",
+      "tier": "关联",
+      "organizer": "",
+      "site": "http://www.yywz.org.cn/",
+      "window": "1-11 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语",
+        "教育心理"
+      ]
+    },
+    {
+      "id": "cn-ncetac",
+      "name": "全国大学生英语翻译能力竞赛",
+      "short": "英语翻译能力",
+      "category": "语言文化",
+      "tier": "关联",
+      "organizer": "",
+      "site": "http://www.ncetac.com/",
+      "window": "1-7 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ]
+    },
+    {
+      "id": "cn-puyi",
+      "name": "普译奖全国大学生翻译比赛",
+      "short": "普译奖",
+      "category": "语言文化",
+      "tier": "关联",
+      "organizer": "",
+      "site": "http://puyi.52jingsai.com/index.html",
+      "window": "2-5 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ]
+    },
+    {
+      "id": "cn-tbem",
+      "name": "全国高校商务英语竞赛",
+      "short": "商务英语竞赛",
+      "category": "语言文化",
+      "tier": "关联",
+      "organizer": "",
+      "site": "http://www.tbem.org.cn/index.html",
+      "window": "2-5 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语",
+        "经管金融"
+      ]
+    },
+    {
+      "id": "cn-worldskills",
+      "name": "世界技能大赛",
+      "short": "世界技能大赛",
+      "category": "国际赛事",
+      "tier": "榜单",
+      "organizer": "WorldSkills International",
+      "site": "https://worldskills.org/",
+      "window": "两年一届，以官网为准",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合"
+      ],
+      "note": "以高职/职业技能方向为主"
+    },
+    {
+      "id": "cn-worldskills-cn",
+      "name": "世界技能大赛中国选拔赛",
+      "short": "世赛中国选拔",
+      "category": "国际赛事",
+      "tier": "榜单",
+      "organizer": "人力资源社会保障部",
+      "site": "http://worldskillschina.mohrss.gov.cn/",
+      "window": "1-4 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合"
+      ]
+    },
+    {
+      "id": "cn-brskills",
+      "name": "“一带一路”暨金砖国家技能发展与技术创新大赛",
+      "short": "金砖大赛",
+      "category": "国际赛事",
+      "tier": "榜单",
+      "organizer": "金砖国家工商理事会",
+      "site": "http://www.brskills.com/#/index",
+      "window": "1-11 月",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合",
+        "机械制造"
+      ]
+    },
+    {
+      "id": "cn-vcsc",
+      "name": "世界职业院校技能大赛",
+      "short": "世职赛",
+      "category": "国际赛事",
+      "tier": "榜单",
+      "organizer": "",
+      "site": "https://www.vcsc.org.cn/",
+      "window": "以官网为准",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合"
+      ]
+    },
+    {
+      "id": "uni-004",
+      "name": "Willem C. Vis国际商事仲裁模拟仲裁庭辩论赛",
+      "short": "Willem C. Vis国际商事仲裁模拟仲裁庭辩论赛",
+      "category": "语言文化",
+      "recognition": "国际级顶级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "以国际商事仲裁为题的全球模拟仲裁庭辩论赛，全英文书状加庭辩，法学的国际名片赛事。"
+    },
+    {
+      "id": "uni-005",
+      "name": "国际遗传工程机器大赛（iGEM Competition）",
+      "short": "国际遗传工程机器大赛",
+      "category": "数理化生",
+      "recognition": "国际级顶级赛事",
+      "organizer": "iGEM Foundation",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生",
+        "农林食品"
+      ],
+      "intro": "合成生物学领域最大的国际赛，用工程化思路设计基因线路、做出能干活的\"活体机器\"。"
+    },
+    {
+      "id": "uni-006",
+      "name": "国际生物分子设计大赛（Biomolecular Design Competition）",
+      "short": "国际生物分子设计大赛",
+      "category": "数理化生",
+      "recognition": "国际级顶级赛事",
+      "organizer": "BIOMOD（哈佛大学发起）",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生"
+      ],
+      "intro": "用核酸、蛋白等分子\"搭积木\"设计纳米机器，比创意设计加实验验证（BIOMOD 系列）。"
+    },
+    {
+      "id": "uni-008",
+      "name": "国际太阳能十项全能竞赛",
+      "short": "国际太阳能十项全能竞赛",
+      "category": "能源环境",
+      "recognition": "国际级顶级赛事",
+      "organizer": "美国能源部发起",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生",
+        "机械制造"
+      ],
+      "intro": "十项指标考核一栋全太阳能房子——建出来、住进去、比能源与宜居，太阳能建筑界的奥运会。"
+    },
+    {
+      "id": "uni-009",
+      "name": "阿里巴巴全球数学竞赛",
+      "short": "阿里巴巴全球数学竞赛",
+      "category": "数理化生",
+      "recognition": "国际级顶级赛事",
+      "organizer": "阿里巴巴达摩院",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生"
+      ],
+      "intro": "全球规模最大的在线数学竞赛之一，不设报名门槛，预选到决赛全程线上解题。"
+    },
+    {
+      "id": "uni-010",
+      "name": "奥林匹克运动会",
+      "short": "奥林匹克运动会",
+      "category": "综合创新",
+      "recognition": "国际级顶级赛事",
+      "organizer": "国际奥林匹克委员会",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合",
+        "体育健康"
+      ],
+      "intro": "全球最高水平的综合性运动会，学生多以运动员、保障人员或志愿者身份参与。"
+    },
+    {
+      "id": "uni-011",
+      "name": "ELSA Moot Court Competition of WTO Law（ELSA WTO 模拟法庭竞赛）",
+      "short": "ELSA Moot Court Competition of WTO Law",
+      "category": "语言文化",
+      "recognition": "国际级赛事",
+      "organizer": "ELSA（欧洲法学院学生联合会）",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "模拟 WTO 争端解决机制的国际模拟法庭，全英文书状与口头辩论，法学国际化的首选。"
+    },
+    {
+      "id": "uni-012",
+      "name": "Philip C. Jessup国际法模拟法庭竞赛",
+      "short": "Philip C. Jessup国际法模拟法庭竞赛",
+      "category": "语言文化",
+      "recognition": "国际级赛事",
+      "organizer": "国际法学生协会（ILSA）",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "全球规模最大、历史最久的国际法模拟法庭，被称作国际法界的\"奥林匹克\"。"
+    },
+    {
+      "id": "uni-013",
+      "name": "美国大学生数学建模竞赛",
+      "short": "美国大学生数学建模竞赛",
+      "category": "数理化生",
+      "recognition": "国际级赛事",
+      "organizer": "美国数学及其应用联合会（COMAP）",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生"
+      ],
+      "intro": "四天四夜三人解一道开放建模题，产出英文论文，国际认可度最高的数模赛（美赛）。"
+    },
+    {
+      "id": "uni-014",
+      "name": "国际空中机器人大赛",
+      "short": "国际空中机器人大赛",
+      "category": "机器人",
+      "recognition": "国际级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机",
+        "机械制造"
+      ],
+      "intro": "无人机自主完成高难度任务的国际赛事，一年一任务、多国分赛场连续攻坚。"
+    },
+    {
+      "id": "uni-015",
+      "name": "亚太大学生机器人大赛",
+      "short": "亚太大学生机器人大赛",
+      "category": "机器人",
+      "recognition": "国际级赛事",
+      "organizer": "亚洲-太平洋广播联盟（ABU）",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机",
+        "机械制造"
+      ],
+      "intro": "亚广联主办的亚太大学生机器人对抗赛，每年一道主题任务，国内先选拔再出战。"
+    },
+    {
+      "id": "uni-016",
+      "name": "国际先进机器人及仿真技术大赛",
+      "short": "国际先进机器人及仿真技术大赛",
+      "category": "机器人",
+      "recognition": "国际级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机",
+        "机械制造"
+      ],
+      "intro": "水下、救援等特种机器人与仿真系统同台比拼，偏工程实操与国际协作。"
+    },
+    {
+      "id": "uni-018",
+      "name": "国际太阳能建筑设计竞赛",
+      "short": "国际太阳能建筑设计竞赛",
+      "category": "土木建筑",
+      "recognition": "国际级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑"
+      ],
+      "intro": "围绕太阳能建筑做方案设计，两年一届，优胜方案常被真的建出来示范。"
+    },
+    {
+      "id": "uni-019",
+      "name": "东元Green Tech国际创意竞赛",
+      "short": "东元Green Tech国际创意竞赛",
+      "category": "艺术设计",
+      "recognition": "国际级赛事",
+      "organizer": "东元电机文教基金会",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计"
+      ],
+      "intro": "面向全球高校的绿色能源科技创意赛，比节能减碳方案的可行性与创意。"
+    },
+    {
+      "id": "uni-020",
+      "name": "中国国际钢琴比赛",
+      "short": "国际钢琴比赛",
+      "category": "艺术设计",
+      "recognition": "国际级赛事",
+      "organizer": "文化和旅游部",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计"
+      ],
+      "intro": "国家级的国际钢琴赛事，顶尖选手同台，获奖者多走上职业演奏道路。"
+    },
+    {
+      "id": "uni-021",
+      "name": "WDC世界杯国际标准舞世界公开赛",
+      "short": "WDC世界杯国际标准舞世界公开赛",
+      "category": "综合创新",
+      "recognition": "国际级赛事",
+      "organizer": "世界舞蹈总会（WDC）",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合"
+      ],
+      "intro": "国际标准舞（体育舞蹈）的世界级公开赛，职业与业余组别同场竞技。"
+    },
+    {
+      "id": "uni-022",
+      "name": "霍普杯国际大学生建筑设计竞赛",
+      "short": "霍普杯国际大学生建筑设计竞赛",
+      "category": "土木建筑",
+      "recognition": "国际级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑"
+      ],
+      "intro": "全称 UIA 霍普杯国际大学生建筑设计竞赛，一年一道前沿命题，建筑学子的国际标杆。"
+    },
+    {
+      "id": "uni-023",
+      "name": "月球基地2050国际创新大赛",
+      "short": "月球基地2050国际创新大赛",
+      "category": "综合创新",
+      "recognition": "国际级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合"
+      ],
+      "intro": "围绕\"2050 年月球基地怎么建\"做系统方案，航天领域的青年创新赛事。"
+    },
+    {
+      "id": "uni-024",
+      "name": "韩素音国际翻译大赛",
+      "short": "韩素音国际翻译大赛",
+      "category": "语言文化",
+      "recognition": "国际级赛事",
+      "organizer": "中国翻译协会",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "以翻译家韩素音命名的翻译赛事，中英为主兼有多语种，翻译圈公认的硬奖。"
+    },
+    {
+      "id": "uni-025",
+      "name": "世界锦标赛",
+      "short": "世界锦标赛",
+      "category": "综合创新",
+      "recognition": "国际级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合"
+      ],
+      "intro": "各运动项目世界锦标赛的总称，学生运动员可经选拔代表国家或学校参赛。"
+    },
+    {
+      "id": "uni-026",
+      "name": "世界大学生运动会",
+      "short": "世界大学生运动会",
+      "category": "综合创新",
+      "recognition": "国际级赛事",
+      "organizer": "国际大学生体育联合会（FISU）",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合",
+        "体育健康"
+      ],
+      "intro": "大学生的\"小奥运\"，两年一届，运动竞技之外也是国际交流的舞台。"
+    },
+    {
+      "id": "uni-027",
+      "name": "亚洲运动会",
+      "short": "亚洲运动会",
+      "category": "综合创新",
+      "recognition": "国际级赛事",
+      "organizer": "亚洲奥林匹克理事会",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合",
+        "体育健康"
+      ],
+      "intro": "亚洲规模最大的综合性运动会，四年一届，竞技水平仅次于奥运会。"
+    },
+    {
+      "id": "uni-031",
+      "name": "全国大学生化学实验竞赛",
+      "short": "化学实验竞赛",
+      "category": "数理化生",
+      "recognition": "国家级顶级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生"
+      ],
+      "intro": "老牌化学实验赛事，比合成、分析等实验操作与设计。"
+    },
+    {
+      "id": "uni-071",
+      "name": "全国高校BIM毕业设计创新大赛",
+      "short": "BIM毕业设计创新大赛",
+      "category": "土木建筑",
+      "recognition": "国家级顶级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑"
+      ],
+      "intro": "用 BIM 技术做建筑全生命周期的毕业设计，土建类信息化方向。"
+    },
+    {
+      "id": "uni-072",
+      "name": "RoboCom机器人开发者大赛",
+      "short": "RoboCom机器人开发者大赛",
+      "category": "机器人",
+      "recognition": "国家级顶级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机",
+        "机械制造"
+      ],
+      "intro": "面向开发者的机器人任务赛，比算法与机器人系统集成。"
+    },
+    {
+      "id": "uni-077",
+      "name": "“英特尔杯”全国大学生软件创新大赛",
+      "short": "“英特尔杯”全国大学生软件创新大赛",
+      "category": "计算机",
+      "recognition": "国家级顶级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机"
+      ],
+      "intro": "围绕指定平台做软件创新作品，云计算与 AI 命题年年更新。"
+    },
+    {
+      "id": "uni-078",
+      "name": "“中国WTO模拟法庭竞赛”（China WTO Moot Court Competition）",
+      "short": "“中国WTO模拟法庭竞赛”",
+      "category": "语言文化",
+      "recognition": "国家级顶级赛事",
+      "organizer": "中国法学会世界贸易组织法研究会",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "全英文比拼 WTO 法书状与庭辩的国内顶尖模拟法庭。"
+    },
+    {
+      "id": "uni-079",
+      "name": "全国美术作品展览",
+      "short": "美术作品展览",
+      "category": "艺术设计",
+      "recognition": "国家级顶级赛事",
+      "organizer": "文化和旅游部、中国美术家协会",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计"
+      ],
+      "intro": "五年一届的国家级美展，油画、国画、雕塑等全画种，美术界的最高平台。"
+    },
+    {
+      "id": "uni-080",
+      "name": "中国大学生物理学术竞赛（CUPT）",
+      "short": "物理学术竞赛",
+      "category": "数理化生",
+      "recognition": "国家级顶级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生"
+      ],
+      "intro": "十七道开放物理题，正反方庭辩式对抗，比研究思维与临场论辩（CUPT）。"
+    },
+    {
+      "id": "uni-082",
+      "name": "全国医药院校药学/中药学专业大学生实验技能竞赛",
+      "short": "医药院校药学/中药学专业大学生实验技能竞赛",
+      "category": "医学",
+      "recognition": "国家级顶级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "医学"
+      ],
+      "intro": "药学、中药学实验技能大比武，实验设计加规范操作。"
+    },
+    {
+      "id": "uni-083",
+      "name": "全国高分子材料创新创业大赛",
+      "short": "高分子材料创新创业大赛",
+      "category": "数理化生",
+      "recognition": "国家级顶级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生"
+      ],
+      "intro": "高分子材料方向的作品与创业计划赛。"
+    },
+    {
+      "id": "uni-084",
+      "name": "中国大学生飞行器设计创新大赛",
+      "short": "飞行器设计创新大赛",
+      "category": "工程机械",
+      "recognition": "国家级顶级赛事",
+      "organizer": "中国航空学会",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "机械制造"
+      ],
+      "intro": "航模与飞行器设计实飞对抗，从设计图纸到蓝天检验。"
+    },
+    {
+      "id": "uni-086",
+      "name": "丘成桐大学生数学竞赛",
+      "short": "丘成桐大学生数学竞赛",
+      "category": "数理化生",
+      "recognition": "国家级顶级赛事",
+      "organizer": "清华大学丘成桐数学科学中心",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生"
+      ],
+      "intro": "丘成桐先生设立，分科目笔试加面试，数学拔尖生的试金石。"
+    },
+    {
+      "id": "uni-087",
+      "name": "全国口译大赛",
+      "short": "口译大赛",
+      "category": "语言文化",
+      "recognition": "国家级顶级赛事",
+      "organizer": "中国翻译协会",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "交替传译到同声传译层层比拼，翻译方向的实战擂台。"
+    },
+    {
+      "id": "uni-088",
+      "name": "全国大学生职业规划大赛",
+      "short": "职业规划大赛",
+      "category": "综合创新",
+      "recognition": "国家级顶级赛事",
+      "organizer": "教育部",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合"
+      ],
+      "intro": "教育部主办，把成长路径与职业目标讲清楚，比规划更比表达。"
+    },
+    {
+      "id": "uni-089",
+      "name": "全国运动会",
+      "short": "全国运动会",
+      "category": "综合创新",
+      "recognition": "国家级顶级赛事",
+      "organizer": "国家体育总局",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合",
+        "体育健康"
+      ],
+      "intro": "国内水平最高的综合性运动会，学生运动员可经选拔参赛。"
+    },
+    {
+      "id": "uni-090",
+      "name": "全国学生（青年）运动会",
+      "short": "学生运动会",
+      "category": "综合创新",
+      "recognition": "国家级顶级赛事",
+      "organizer": "国家体育总局、教育部",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合",
+        "体育健康"
+      ],
+      "intro": "青少年学生的全国综合运动会（学青会），体育特招与体教融合的主阵地。"
+    },
+    {
+      "id": "uni-091",
+      "name": "中国大学生公共关系策划创业大赛",
+      "short": "公共关系策划创业大赛",
+      "category": "经管金融",
+      "recognition": "国家级赛事",
+      "organizer": "中国国际公共关系协会",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "经管金融",
+        "传媒传播"
+      ],
+      "intro": "公关策划方案比稿，传播与商科的交叉赛场。"
+    },
+    {
+      "id": "uni-092",
+      "name": "全国高校俄语大赛",
+      "short": "俄语大赛",
+      "category": "语言文化",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "俄语语言与国情知识的全国性比拼，俄语专业的最高舞台。"
+    },
+    {
+      "id": "uni-093",
+      "name": "“外教社杯”全国高校法语演讲比赛",
+      "short": "“外教社杯”全国高校法语演讲比赛",
+      "category": "语言文化",
+      "recognition": "国家级赛事",
+      "organizer": "上海外语教育出版社",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "法语演讲与表达能力的全国比赛。"
+    },
+    {
+      "id": "uni-094",
+      "name": "全国高校大学生德语辩论赛",
+      "short": "大学生德语辩论赛",
+      "category": "语言文化",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "德语辩论赛制，围绕议题正反交锋。"
+    },
+    {
+      "id": "uni-095",
+      "name": "中华全国日语演讲比赛",
+      "short": "中华全国日语演讲比赛",
+      "category": "语言文化",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "全国日语演讲的顶级赛事，从地区预选到东京总决赛。"
+    },
+    {
+      "id": "uni-096",
+      "name": "全国法语人才竞赛",
+      "short": "法语人才竞赛",
+      "category": "语言文化",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "综合考察法语应用能力，面向高校法语学习者的全国赛。"
+    },
+    {
+      "id": "uni-097",
+      "name": "海峡两岸口译大赛",
+      "short": "海峡两岸口译大赛",
+      "category": "语言文化",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "两岸口译高手同台，交替传译加耳语同传。"
+    },
+    {
+      "id": "uni-098",
+      "name": "全国西班牙语演讲大赛",
+      "short": "西班牙语演讲大赛",
+      "category": "语言文化",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "西语演讲能力全国赛，语种虽小舞台不小。"
+    },
+    {
+      "id": "uni-099",
+      "name": "全国大学生英语竞赛",
+      "short": "英语竞赛",
+      "category": "语言文化",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "覆盖面最广的英语综合能力笔试赛，按院校层次分 A/B/C 类。"
+    },
+    {
+      "id": "uni-100",
+      "name": "Philip C. Jessup国际法模拟法庭竞赛中国选拔赛",
+      "short": "Philip C. Jessup国际法模拟法庭竞赛中国选拔赛",
+      "category": "语言文化",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "Jessup 中国区选拔，优胜队代表中国出征国际轮。"
+    },
+    {
+      "id": "uni-101",
+      "name": "国际刑事法院中文模拟法庭比赛",
+      "short": "国际刑事法院中文模拟法庭比赛",
+      "category": "语言文化",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "以《国际刑事法院罗马规约》为基础的中文模拟法庭，书状加庭辩。"
+    },
+    {
+      "id": "uni-102",
+      "name": "（中国）国际海洋法模拟法庭竞赛",
+      "short": "国际海洋法模拟法庭竞赛",
+      "category": "语言文化",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "聚焦国际海洋法争端的模拟法庭，涉海法务的特色赛事。"
+    },
+    {
+      "id": "uni-103",
+      "name": "“贸仲杯”国际商事模拟仲裁庭辩论赛",
+      "short": "“贸仲杯”国际商事模拟仲裁庭辩论赛",
+      "category": "语言文化",
+      "recognition": "国家级赛事",
+      "organizer": "中国国际经济贸易仲裁委员会（CIETAC）",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "中国国际经济贸易仲裁委员会主办的商事仲裁模拟庭辩，仲裁实务的提前演练。"
+    },
+    {
+      "id": "uni-104",
+      "name": "“工商银行杯”全国大学生金融创意设计大赛",
+      "short": "“工商银行杯”全国大学生金融创意设计大赛",
+      "category": "经管金融",
+      "recognition": "国家级赛事",
+      "organizer": "中国工商银行",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "经管金融"
+      ],
+      "intro": "围绕金融产品与服务做创意设计，命题方直接评审。"
+    },
+    {
+      "id": "uni-105",
+      "name": "“毕马威杯”管理案例分析全国十强邀请赛",
+      "short": "“毕马威杯”管理案例分析全国十强邀请赛",
+      "category": "经管金融",
+      "recognition": "国家级赛事",
+      "organizer": "毕马威（KPMG）",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "经管金融"
+      ],
+      "intro": "受邀院校参加的管理案例分析赛，咨询式解题。"
+    },
+    {
+      "id": "uni-106",
+      "name": "“尖烽时刻”酒店管理模拟大赛",
+      "short": "“尖烽时刻”酒店管理模拟大赛",
+      "category": "经管金融",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "经管金融"
+      ],
+      "intro": "酒店运营模拟软件上比经营决策。"
+    },
+    {
+      "id": "uni-107",
+      "name": "“尖烽时刻”商业模拟大赛",
+      "short": "“尖烽时刻”商业模拟大赛",
+      "category": "经管金融",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "经管金融"
+      ],
+      "intro": "商业模拟经营对抗，轮次晋级到全国总决赛。"
+    },
+    {
+      "id": "uni-108",
+      "name": "全国高校密码数学挑战赛",
+      "short": "密码数学挑战赛",
+      "category": "计算机",
+      "recognition": "国家级赛事",
+      "organizer": "中国密码学会",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机"
+      ],
+      "intro": "密码学与数学交叉的题赛，偏理论推导与算法设计。"
+    },
+    {
+      "id": "uni-109",
+      "name": "全国大学生数学竞赛",
+      "short": "数学竞赛",
+      "category": "数理化生",
+      "recognition": "国家级赛事",
+      "organizer": "中国数学会",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生"
+      ],
+      "intro": "数学基础学科规格最高的笔试赛，非数学专业也可参加，初赛决赛两级。"
+    },
+    {
+      "id": "uni-110",
+      "name": "中国国际飞行器设计挑战赛",
+      "short": "国际飞行器设计挑战赛",
+      "category": "工程机械",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "机械制造"
+      ],
+      "intro": "航模任务飞行的国际挑战赛，从设计、制作到实飞全程比拼。"
+    },
+    {
+      "id": "uni-111",
+      "name": "三菱电机杯全国大学生电气与自动化大赛",
+      "short": "三菱电机杯全国大学生电气与自动化大赛",
+      "category": "电子通信",
+      "recognition": "国家级赛事",
+      "organizer": "三菱电机",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "电子通信",
+        "计算机"
+      ],
+      "intro": "电气与自动化系统的应用设计赛，企业命题。"
+    },
+    {
+      "id": "uni-112",
+      "name": "国际无人飞行器创新大奖赛",
+      "short": "国际无人飞行器创新大奖赛",
+      "category": "工程机械",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "机械制造"
+      ],
+      "intro": "无人机创新作品与飞行展示并重的国际赛事。"
+    },
+    {
+      "id": "uni-113",
+      "name": "全国大学生化工安全设计大赛",
+      "short": "化工安全设计大赛",
+      "category": "化工",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生"
+      ],
+      "intro": "化工过程安全设计——危险与可操作性分析、安全仪表都算在内。"
+    },
+    {
+      "id": "uni-115",
+      "name": "“北斗杯”全国青少年科技创新大赛",
+      "short": "“北斗杯”全国青少年科技创新大赛",
+      "category": "综合创新",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合"
+      ],
+      "intro": "围绕北斗卫星导航应用的科技创新赛，大学组与青少年组并行。"
+    },
+    {
+      "id": "uni-116",
+      "name": "全国大学生海洋知识竞赛",
+      "short": "海洋知识竞赛",
+      "category": "测绘地理",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑",
+        "数理化生",
+        "农林食品"
+      ],
+      "intro": "海洋科学与海洋权益知识的竞答，答题到演讲多环节。"
+    },
+    {
+      "id": "uni-117",
+      "name": "0I中国水下机器人比赛",
+      "short": "0I中国水下机器人比赛",
+      "category": "机器人",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机",
+        "机械制造"
+      ],
+      "intro": "水下机器人的作业任务赛，对标海上工程真实场景。"
+    },
+    {
+      "id": "uni-118",
+      "name": "“慧医谷杯”全国中医大学生临床能力大赛",
+      "short": "“慧医谷杯”全国中医大学生临床能力大赛",
+      "category": "医学",
+      "recognition": "国家级赛事",
+      "organizer": "教育部高校中医学类专业教指委",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "医学"
+      ],
+      "intro": "中医望闻问切加针灸推拿的临床能力大赛。"
+    },
+    {
+      "id": "uni-120",
+      "name": "全国大学生数字建造与管理创新竞赛",
+      "short": "数字建造与管理创新竞赛",
+      "category": "土木建筑",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑"
+      ],
+      "intro": "数字化施工与工程管理的方案赛，BIM 深度应用。"
+    },
+    {
+      "id": "uni-121",
+      "name": "国际建协世界大学生设计竞赛（UIA Student Competition）",
+      "short": "国际建协世界大学生设计竞赛",
+      "category": "土木建筑",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑"
+      ],
+      "intro": "国际建筑师协会（UIA）的官方学生设计竞赛，两年一题。"
+    },
+    {
+      "id": "uni-122",
+      "name": "全国大学生可持续建筑设计竞赛",
+      "short": "可持续建筑设计竞赛",
+      "category": "土木建筑",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑"
+      ],
+      "intro": "绿色低碳导向的建筑设计竞赛。"
+    },
+    {
+      "id": "uni-123",
+      "name": "全国高等院校学生“斯维尔杯”BIM-CIM创新大赛",
+      "short": "学生“斯维尔杯”BIM-CIM创新大赛",
+      "category": "土木建筑",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑"
+      ],
+      "intro": "BIM 与 CIM 技术应用的院校对抗赛。"
+    },
+    {
+      "id": "uni-124",
+      "name": "全国大学生混凝土材料设计大赛",
+      "short": "混凝土材料设计大赛",
+      "category": "土木建筑",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑"
+      ],
+      "intro": "配合比设计与混凝土性能的实验赛。"
+    },
+    {
+      "id": "uni-125",
+      "name": "“中联杯” 大学生建筑设计国际竞赛",
+      "short": "“中联杯” 大学生建筑设计国际竞赛",
+      "category": "土木建筑",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑"
+      ],
+      "intro": "大学生建筑设计国际竞赛，命题多关注城市与在地议题。"
+    },
+    {
+      "id": "uni-126",
+      "name": "TEAM20两岸建筑与规划新人奖",
+      "short": "TEAM20两岸建筑与规划新人奖",
+      "category": "土木建筑",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑"
+      ],
+      "intro": "两岸建筑与规划毕业设计的交流评图，评出\"新人奖\"。"
+    },
+    {
+      "id": "uni-127",
+      "name": "全国高校大学生显微分析大赛和材料综合技能大赛",
+      "short": "大学生显微分析大赛和材料综合技能大赛",
+      "category": "数理化生",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生"
+      ],
+      "intro": "金相显微与材料分析技能的比拼。"
+    },
+    {
+      "id": "uni-128",
+      "name": "中国青年志愿服务项目大赛",
+      "short": "青年志愿服务项目大赛",
+      "category": "综合创新",
+      "recognition": "国家级赛事",
+      "organizer": "中国青年志愿者协会等",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合"
+      ],
+      "intro": "志愿服务项目的全国展评，比的是项目化运作与真实成效。"
+    },
+    {
+      "id": "uni-129",
+      "name": "中国高等院校设计艺术大赛",
+      "short": "高等院校设计艺术大赛",
+      "category": "艺术设计",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计"
+      ],
+      "intro": "设计艺术类作品的综合展赛。"
+    },
+    {
+      "id": "uni-130",
+      "name": "全国美术设计展览",
+      "short": "美术设计展览",
+      "category": "艺术设计",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计"
+      ],
+      "intro": "美术与设计方向的展览型赛事。"
+    },
+    {
+      "id": "uni-131",
+      "name": "全国漆画展",
+      "short": "全国漆画展",
+      "category": "艺术设计",
+      "recognition": "国家级赛事",
+      "organizer": "中国美术家协会",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计"
+      ],
+      "intro": "漆画专项的全国性展览。"
+    },
+    {
+      "id": "uni-132",
+      "name": "全国青年美术作品展",
+      "short": "青年美术作品展",
+      "category": "艺术设计",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计"
+      ],
+      "intro": "面向青年创作者的美术作品大展。"
+    },
+    {
+      "id": "uni-133",
+      "name": "中国音乐金钟奖",
+      "short": "音乐金钟奖",
+      "category": "艺术设计",
+      "recognition": "国家级赛事",
+      "organizer": "中国音乐家协会",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计"
+      ],
+      "intro": "中国音乐界最高奖项之一，声乐与器乐的权威评奖。"
+    },
+    {
+      "id": "uni-134",
+      "name": "长江钢琴·全国高校钢琴大赛",
+      "short": "长江钢琴·全国高校钢琴大赛",
+      "category": "艺术设计",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计"
+      ],
+      "intro": "高校钢琴演奏的专业赛事。"
+    },
+    {
+      "id": "uni-135",
+      "name": "WUPENiCity城市设计学生作业国际竞赛/城市可持续调研报告国际竞赛",
+      "short": "WUPENiCity城市设计学生作业国际竞赛/城市可持续调研报告国际竞赛",
+      "category": "土木建筑",
+      "recognition": "国家级赛事",
+      "organizer": "世界规划教育组织（WUPEN）",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑"
+      ],
+      "intro": "城市设计学生作业与城市可持续调研的国际竞赛，规划类专业对口。"
+    },
+    {
+      "id": "uni-136",
+      "name": "全国大学生创新方法应用大赛",
+      "short": "创新方法应用大赛",
+      "category": "综合创新",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合"
+      ],
+      "intro": "用 TRIZ 等创新方法解决工程问题。"
+    },
+    {
+      "id": "uni-138",
+      "name": "全国大学生艺术节",
+      "short": "全国大学生艺术节",
+      "category": "艺术设计",
+      "recognition": "国家级赛事",
+      "organizer": "教育部",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计"
+      ],
+      "intro": "三年一届的大学生艺术展演，声乐、器乐、舞蹈、戏剧、美术全覆盖。"
+    },
+    {
+      "id": "uni-139",
+      "name": "文华艺术院校奖",
+      "short": "文华艺术院校奖",
+      "category": "艺术设计",
+      "recognition": "国家级赛事",
+      "organizer": "文化和旅游部",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计"
+      ],
+      "intro": "艺术院校的专业评奖，舞台艺术\"学院派\"的最高奖之一。"
+    },
+    {
+      "id": "uni-140",
+      "name": "全国普通高等学校音乐、美术教育专业本科学生基本功展示",
+      "short": "音乐、美术教育专业本科学生基本功展示",
+      "category": "艺术设计",
+      "recognition": "国家级赛事",
+      "organizer": "教育部",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计",
+        "教育心理"
+      ],
+      "intro": "师范类音乐、美术教育专业的教学基本功检阅。"
+    },
+    {
+      "id": "uni-141",
+      "name": "全国大学生高分子材料实验实践大赛",
+      "short": "高分子材料实验实践大赛",
+      "category": "数理化生",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生"
+      ],
+      "intro": "高分子合成与加工的实验技能赛。"
+    },
+    {
+      "id": "uni-142",
+      "name": "中国大学生动力电池创新竞赛",
+      "short": "动力电池创新竞赛",
+      "category": "能源环境",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生",
+        "机械制造"
+      ],
+      "intro": "动力电池与新能源技术方向的创新方案赛。"
+    },
+    {
+      "id": "uni-143",
+      "name": "中国人居环境设计学年奖",
+      "short": "人居环境设计学年奖",
+      "category": "土木建筑",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑"
+      ],
+      "intro": "环境设计方向的学年作品评奖。"
+    },
+    {
+      "id": "uni-144",
+      "name": "白金创意国际大学生平面设计大赛",
+      "short": "白金创意国际大学生平面设计大赛",
+      "category": "艺术设计",
+      "recognition": "国家级赛事",
+      "organizer": "中国美术学院",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "艺术设计"
+      ],
+      "intro": "平面设计方向的老牌学生赛事。"
+    },
+    {
+      "id": "uni-147",
+      "name": "“理律杯”全国高校模拟法庭竞赛",
+      "short": "“理律杯”全国高校模拟法庭竞赛",
+      "category": "语言文化",
+      "recognition": "国家级赛事",
+      "organizer": "理律文教基金会等",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "高规格模拟法庭对抗，卷宗研读加正式开庭，法科生的年度大考。"
+    },
+    {
+      "id": "uni-148",
+      "name": "全国医学检验技术专业大学生形态学技能大赛",
+      "short": "医学检验技术专业大学生形态学 技能大赛",
+      "category": "医学",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "医学"
+      ],
+      "intro": "血细胞等形态学识别与检验技能比拼。"
+    },
+    {
+      "id": "uni-149",
+      "name": "全国大学生冰壶人工智能挑战赛",
+      "short": "冰壶人工智能挑战赛",
+      "category": "计算机",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机"
+      ],
+      "intro": "用 AI 操控冰壶的策略对抗赛，体育与算法交叉。"
+    },
+    {
+      "id": "uni-150",
+      "name": "合成生物学竞赛",
+      "short": "合成生物学竞赛",
+      "category": "数理化生",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生",
+        "农林食品"
+      ],
+      "intro": "合成生物学的设计与实验作品赛。"
+    },
+    {
+      "id": "uni-151",
+      "name": "教育部基础学科拔尖学生培养计划 2.0 “提问与猜想”活动",
+      "short": "教育部基础学科拔尖学生培养计划 2.0 “提问与猜想”活动",
+      "category": "综合创新",
+      "recognition": "国家级赛事",
+      "organizer": "教育部",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合",
+        "教育心理"
+      ],
+      "intro": "拔尖计划 2.0 的学术挑战活动，鼓励提出并论证\"真问题\"。"
+    },
+    {
+      "id": "uni-152",
+      "name": "高等院校绿色建筑技能大赛",
+      "short": "高等院校绿色建筑技能大赛",
+      "category": "土木建筑",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑"
+      ],
+      "intro": "绿色建筑性能分析与优化设计的技能赛。"
+    },
+    {
+      "id": "uni-153",
+      "name": "未来规划师——全国大学生国土空间规划设计竞赛暨城乡规划毕业设计(论文)竞赛",
+      "short": "未来规划师——全国大学生国土空间 规划设计竞赛暨城乡规划毕业设计竞赛",
+      "category": "测绘地理",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "土木建筑",
+        "数理化生"
+      ],
+      "intro": "国土空间规划设计与城乡规划毕业设计的全国联评。"
+    },
+    {
+      "id": "uni-155",
+      "name": "“宁德时代杯”新能源创新大赛",
+      "short": "“宁德时代杯”新能源创新大赛",
+      "category": "能源环境",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生",
+        "机械制造"
+      ],
+      "intro": "新能源技术的应用创新赛。"
+    },
+    {
+      "id": "uni-156",
+      "name": "全国大学生可再生能源优秀科技作品竞赛",
+      "short": "可再生能源优秀科技作品竞赛",
+      "category": "能源环境",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "数理化生",
+        "机械制造"
+      ],
+      "intro": "风、光、水等可再生能源的科技作品评选。"
+    },
+    {
+      "id": "uni-157",
+      "name": "CATTI杯全国翻译大赛",
+      "short": "CATTI杯全国翻译大赛",
+      "category": "语言文化",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "文法外语"
+      ],
+      "intro": "对接 CATTI 翻译资格考试体系的全国翻译赛。"
+    },
+    {
+      "id": "uni-159",
+      "name": "CCF 大学生计算机系统与程序设计竞赛",
+      "short": "CCF 大学生计算机系统与程序设计竞赛",
+      "category": "计算机",
+      "recognition": "国家级赛事",
+      "organizer": "中国计算机学会（CCF）",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机"
+      ],
+      "intro": "中国计算机学会（CCF）主办，计算机系统与程序设计能力的综合测评。"
+    },
+    {
+      "id": "uni-160",
+      "name": "中国人工智能大赛",
+      "short": "人工智能大赛",
+      "category": "计算机",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机"
+      ],
+      "intro": "AI 技术应用的作品评测赛，多赛道并行。"
+    },
+    {
+      "id": "uni-161",
+      "name": "“网信柏鹭杯”全国大学生网络空间安全精英赛",
+      "short": "“网信柏鹭杯”全国大学生网络空间安全 精英赛",
+      "category": "计算机",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "计算机"
+      ],
+      "intro": "网络空间安全的攻防精英赛。"
+    },
+    {
+      "id": "uni-162",
+      "name": "全国大学生药苑论坛",
+      "short": "药苑论坛",
+      "category": "医学",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "医学"
+      ],
+      "intro": "药学科研成果的交流与评比。"
+    },
+    {
+      "id": "uni-163",
+      "name": "全国口腔院校本科生临床操作技能展示",
+      "short": "口腔院校本科生临床操作技能展示",
+      "category": "医学",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "医学"
+      ],
+      "intro": "口腔临床操作技能的全国性展示。"
+    },
+    {
+      "id": "uni-164",
+      "name": "全国大学生单项锦标赛",
+      "short": "单项锦标赛",
+      "category": "综合创新",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合"
+      ],
+      "intro": "各体育单项的全国锦标赛，学生运动员凭成绩计体育类竞赛。"
+    },
+    {
+      "id": "uni-165",
+      "name": "全国单项锦标赛",
+      "short": "单项锦标赛",
+      "category": "综合创新",
+      "recognition": "国家级赛事",
+      "organizer": "",
+      "site": "",
+      "window": "",
+      "stages": "报名比赛评奖",
+      "majorTags": [
+        "综合"
+      ],
+      "intro": "各体育单项的全国锦标赛，学生运动员凭成绩计体育类竞赛。"
+    }
+  ],
+  "recognitionSource": "某高校《本科生学业竞赛项目库（2024 年修订）》",
+  "recognitionNote": "该名单把认定的竞赛分四档，依次为：国际级顶级赛事、国际级赛事、国家级顶级赛事、国家级赛事。保研与评奖时按此档次认定，国际级顶级最硬。",
+  "introNote": "简介为工具内置整理（2026-09），主办方与时间以赛事官网为准。"
+}

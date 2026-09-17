@@ -1,0 +1,25 @@
+{
+  "name": "experience-workbench",
+  "version": "1.0.0",
+  "description": "经历工作台 · 纯本地 · 不错过截止 / 找得到材料 / 说得清成果",
+  "main": "server.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "local-first",
+    "zero-dependency",
+    "resume",
+    "student",
+    "competition",
+    "personal-data"
+  ],
+  "scripts": {
+    "start": "node server.js",
+    "qa": "node qa/check-func.js && node qa/check-resp.js"
+  },
+  "optionalDependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}

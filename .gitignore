@@ -1,0 +1,22 @@
+# 运行期数据：全部是使用者自己的资料，绝不入库
+data/
+attachments/
+
+# 自检产物
+qa/out/
+
+# 日志与临时文件
+*.log
+srv.err
+npm-debug.log*
+pdf-out.txt
+
+# 依赖（本项目核心零依赖，nodemailer 为可选）
+node_modules/
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
