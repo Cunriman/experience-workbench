@@ -7,8 +7,6 @@
 
 > 一个零依赖的本地小服务 + 零构建前端。数据全部存在你自己的硬盘上，不联网、不上传、不需要账号。
 
-> 中英双语介绍页（一键切换）：[cunriman.github.io/experience-workbench/intro](https://cunriman.github.io/experience-workbench/intro/)
-
 ![概览](docs/screenshots/01-overview.png)
 
 ---

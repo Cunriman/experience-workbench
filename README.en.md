@@ -7,8 +7,6 @@ countdown reminders for deadlines, material archiving, retrospective notes, and 
 
 > A zero-dependency local service + zero-build frontend. All data lives on your own disk — no network, no uploads, no account required.
 
-> Bilingual intro page (one-click toggle): [cunriman.github.io/experience-workbench/intro](https://cunriman.github.io/experience-workbench/intro/)
-
 ![Overview](docs/screenshots/01-overview.png)
 
 ---
